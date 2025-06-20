@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS hsl e hsla</title> 
+    <style>/* Definição de cores no CSS */
+
+        #rgb {
+            color: rgb(0, 255, 60);/* RGB */
+        }
+
+        #RGBA {
+            color: rgba(255, 81, 0, 0.962);/* RGBA */
+        }
+        
+        #Hex {
+            color: #4a15eb;/*   Hexadecimal */
+        }
+
+        #hsl {
+            color: hsl(180, 100%, 50%);/* HSL */
+            background: red; /* HSL */
+        }  
+        
+        #HSLA {
+            background: #15eb95;/* HSLA */
+        }
+        
+        
+        
+
+    </style>
+</head>
+<body>
+    <h1>Cores</h1>
+    <p>Existem várias formas de definirmos cores utilizando o CCS. Elas são:</p>
+
+    <ul>
+
+        <li id="pre-definidas">cores pré-definidas</li>
+        <li id="corrunt-color">palavras-chave "currentcolor"</li>
+        <li id="Hex">Hexadecimal</li>
+        <li id="hex-transparencia">Hexadecimal com transparência</li>
+        <li id="rgb">RGB</li>
+        <li id="RGBA">RGBA</li>   
+        <li id="HSL">HSL</li>
+        <LI id="HSLA">HSLA</LI>  
+    </ul>
+
+    <hr>
+
+    <h3 id="hsl">HSL</h3>
+    <code> hsl( hue, saturation, lightness)</code>
+    <ul>
+        <li>
+            <b>hue (matriz):</b> é o grau na roda de cores (de 0 a 360 graus)
+            <ul>
+            <li> 0 ou 360 é vermelho</li>
+            <li> 120 é verde</li>
+            <li> 240 é azul</li>
+            </ul>
+        </li>
+
+        <li>
+            <b>saturation (saturação):</b> é a intensidade da cor (de 0% a 100%)
+            <ul>
+                <li>0% é cinza</li>
+                <li>100% é a cor pura</li>
+            </ul>
+        </li>
+
+        <li>
+            <b>lightness (luminosidade):</b> é a quantidade de branco ou preto na cor (de 0% a 100%)
+            <ul>
+                <li>0% é preto</li>
+                <li>100% é branco</li>
+            </ul>
+        </li>   
+    </ul>
+    
+</body>
+</html>

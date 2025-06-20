@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+div {
+    margin-bottom: 30px;
+}
+
+.exemplo {
+    width: 400px;
+    height: 400px;
+    background-image: url("montanhas.jpg"); /* Use caminho relativo se possível */
+    background-size: 120px;
+    border: 5px solid red; /* Corrigido */
+    background-repeat: no-repeat space;
+}
+
+#repeat-x {
+    background-repeat: repeat-x;
+}
+
+
+
+/* link: galeria de padrões CSS3*/
+/* https://projects.verou.me/css3patterns/*/

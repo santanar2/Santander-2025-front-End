@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+    height: 200vh; /* Aumenta a altura do corpo para permitir rolagem */
+}   
+
+div {
+    margin-bottom: 30px;
+}
+
+.exemplo {
+    width: 400px;
+    height: 400px;
+    background-image: url("montanha3.jpg"); /* Use caminho relativo se possível */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+    border: 5px solid red; /* Corrigido */
+    overflow: auto;
+}
+
+#fixed {
+    background-attachment: fixed;
+}
+
+#scroll {
+    background-attachment: scroll;
+}
+
+#local {
+    background-attachment: local;
+}
+
+
+
+/* link: galeria de padrões CSS3*/
+/* https://projects.verou.me/css3patterns/*/

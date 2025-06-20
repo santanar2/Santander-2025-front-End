@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+div {
+    margin-bottom: 30px;
+}
+
+.exemplo {
+    width: 800px;
+    height: 800px;
+    background-image:url(motnha2.jpg) ,url("montanhas.jpg"); /* Use caminho relativo se possível */
+}
+
+/* Valores válidos para background-size */
+#auto {
+    background-size: auto;/* exemplo de tamanho automático */
+}
+
+#cover {
+    background-size: cover;/* exemplo de cobertura total do elemento */
+}
+
+#contain {
+    background-size: contain;/* exemplo de contenção total do elemento */
+}
+
+/* Exemplos de valores válidos */
+#tamanho {
+    background-size: 100px 50px; /* exemplo de tamanho personalizado com largura e altura iguais */
+}
+
+#exemplo-x-y {
+    background-size: 200px 250px; /* exemplo de tamanho personalizado com largura e altura diferentes */
+}
+
+#exemplo-camadas {
+        background-size: contain, cover; /* exemplo de múltiplas camadas com tamanhos diferentes */
+}
+
+/* link: galeria de padrões CSS3*/
+/* https://projects.verou.me/css3patterns/*/

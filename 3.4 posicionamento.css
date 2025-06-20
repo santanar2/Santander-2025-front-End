@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+div {
+    margin-bottom: 30px;
+}
+
+.exemplo {
+    width: 300px; /* Adicionado ponto e vírgula */
+    height: 300px; /* Adicionado ponto e vírgula */
+    background-image: url(montanhas.jpg); /* Corrigido nome do arquivo e ponto e vírgula */
+    background-size: 120px;
+    border: 5px solid red;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 
+background-position:
+left top 
+left center 
+left bottom
+center top 
+center center 
+center bottom  
+right top 
+right center 
+right bottom
+top left 
+top center 
+top right
+center left 
+center right  
+bottom left
+bottom center
+bottom right
+
+
+
+*/
+
+/* link: galeria de padrões CSS3*/
+/* https://projects.verou.me/css3patterns/*/
