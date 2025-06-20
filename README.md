@@ -1,7 +1,4 @@
-Claro! Aqui está o conteúdo formatado como um arquivo `README.md` em Markdown, seguindo as boas práticas de documentação:
-
-```markdown
-# Documentação do Workspace
+# Santander 2025 Front End
 
 Este repositório contém exemplos e exercícios práticos sobre **HTML** e **CSS**, organizados em diferentes módulos e pastas para facilitar o aprendizado dos fundamentos do desenvolvimento web.
 
@@ -102,7 +99,7 @@ Exercícios e exemplos sobre propriedades de cor, gradientes, imagens de fundo, 
 ---
 
 ### 3. `Estilização básica con CSS/`
-Pasta reservada para exemplos de estilização básica com CSS (sem arquivos detalhados listados).
+Pasta reservada para exemplos de estilização básica com CSS.
 
 ---
 
@@ -128,7 +125,4 @@ Projeto principal de reestilização da Wikipedia, focando em semântica, acessi
 
 ## 👨‍🏫 Créditos
 
-Material de estudo baseado em exercícios e desafios da [Digital Innovation One (DIO)](https://www.dio.me/) e adaptações para fins didáticos.
-```
-
-Se quiser, posso salvar esse conteúdo como um arquivo `.md` para você baixar. Deseja isso?
+Material de estudo baseado em exercícios e desafios da [Digital Innovation One (DIO)](https://www.dio.me/) e adaptações para fins

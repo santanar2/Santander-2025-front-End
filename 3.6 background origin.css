@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+    height: 200vh; /* Aumenta a altura do corpo para permitir rolagem */
+}   
+
+div {
+    margin-bottom: 30px;
+}
+
+.exemplo {
+    width: 400px;
+    height: 400px;
+    background-image: url("montanha3.jpg"); /* Use caminho relativo se possível */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 15px dashed palegreen;
+    padding: 30px;
+
+}
+
+
+
+#padding-box {
+    background-origin: padding-box;
+}
+
+#borde-box {
+    background-origin: border-box;
+}
+
+#content-box {
+    background-origin: content-box;
+}
+
+
+
+/* link: galeria de padrões CSS3*/
+/* https://projects.verou.me/css3patterns/*/

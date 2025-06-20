@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+    height: 200vh;
+}
+
+div {
+    margin-bottom: 30px;
+}
+
+.exemplo {
+    width: 400px;
+    height: 400px;
+    border: 30px dashed green;
+    color: white;
+    padding: 80px;
+    font-size: 80px;
+    font-weight: 900;
+    background-color: orange;
+    background-image: url(montanha3.jpg);
+    background-blend-mode: multiply;
+/*
+background-blend-mode: screen;
+background-blend-mod:overlay;
+background-blend-mod:darken;
+(entre outros)
+
+*/
+
+}
+
+
+#padding-box {
+    background-clip: padding-box; 
+}
+
+#border-box {
+    background-clip: border-box;
+}
+
+#content-box {
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+
+#text   
+
+}
+
+
+/* link: galeria de padrões CSS3*/
+/* https://projects.verou.me/css3patterns/*/

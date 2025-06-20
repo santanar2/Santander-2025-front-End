@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+    height: 200vh;
+}
+
+div {
+    margin-bottom: 30px;
+}
+
+.exemplo {
+    width: 400px;
+    height: 400px;
+    border: 30px dashed green;
+    color: white;
+    padding: 80px;
+    font-size: 80px;
+    font-weight: 900; 
+    background: url(montanha2.jpg), url(montanha3.jpg);
+    
+}
