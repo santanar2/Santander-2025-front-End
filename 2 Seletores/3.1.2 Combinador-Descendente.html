@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Combinador Descendente</title>
+ <style>
+        /* Combinador: qual tipo de relação entre 2 seletores.
+        1. conbinador descendente: espaço em branco entre os seletores.
+        2. combinador filho: > entre os seletores.
+        3. combinador adjacente: + entre os seletores.
+        4. combinador geral: ~ entre os seletores.
+        
+        [SELETOR ] [COMBINADOR] [SELETOR ]           
+        */
+
+       .fundo-verde li {
+            background: rgb(82, 232, 82);
+        }
+
+       .fundo-azul li {
+            background: rgb(111, 211, 232);
+        }
+
+        li {
+            color: rgb(226, 89, 43);
+        }
+
+        .fundo-verde #sub-lista-01 li {
+            color: rgb(26, 28, 26);
+        }
+
+        
+       
+    </style>
+</head>
+<body>
+    <UL>
+        <LI class="fundo-verde" id="lista-01">
+        <div>item 1</div>
+        <ul id="sub-lista-01">
+            <li>Subitem A</li>
+            <li>Subitem B</li>
+            </ul>
+        </LI>
+        <li class="fundo-verde" id="lista-02">
+            <div>item 2</div>
+            <ul id="sub-lista-02">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-azul" id="lista-03">
+            <div>item 3</div>
+            <ul id="sub-lista-03">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+    </UL>
+ 
+</body>
+</html>

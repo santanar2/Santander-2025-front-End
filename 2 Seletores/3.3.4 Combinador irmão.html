@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinador irmão</title>
+    <style>
+        /* Combinador: qual tipo de relação entre 2 seletores.
+        1. conbinador descendente: espaço em branco entre os seletores.
+        2. combinador filho: > entre os seletores.
+        3. combinador adjacente: + entre os seletores.
+        4. combinador geral: ~ entre os seletores.
+        
+        [SELETOR ] [COMBINADOR] [SELETOR ]           
+        */
+        .fundo-verde span ~ p {
+            background-color: rgb(155, 220, 155);
+            color: white;
+            padding: 10px;
+        }
+
+        .fundo-verde p + p {
+            background-color: rgb(220, 155, 155);
+            color: white;
+            padding: 10px;
+        }
+
+        .fundo-verde p {
+            background-color: rgb(155, 155, 220);
+            color: white;
+            padding: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="fundo-verde">
+
+        <p> Elemento 01</p>
+        <p> Elemento 02</p>
+        <span>
+            <p>Elemento 03 dentro do span</p>  
+            <p>Elemento 04 dentro do span</p>
+        </span>
+
+        <p>Elemento 05</p>
+        <p>Elemento 06</p>
+        </div>
+
+
+    </div>
+</body>
+</html>

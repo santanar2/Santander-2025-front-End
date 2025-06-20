@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trilha css agrupamento de seletores</title>
+    <style>
+
+        /* Seletores de classe */
+        p, div, #link-suporte {
+            color: rgb(255, 85, 0);
+       }
+
+       .text1o1 {
+            color: rgb(16, 17, 16);
+       }
+       
+       .texto {
+        color: blueviolet;
+       }
+
+       h1, [id^="botao"] {
+            background: lightcoral;
+        }
+
+      
+
+    </style>
+</head>
+<body>
+
+    <h1 class="texto1">Agrupamento de seletores</h1>
+
+    <p class="texto">Podemos aplicar as mesmas reguras Css para Varios seletores diferentes. Para isso, podemos separar os seletorews utilizando uma virgula(,).</p>
+
+    <div class="texto"> Assim, não podemos ficar copiando e coloando os mesmos códigos para todos, nós podemos fazer uma só bloco de CSS e reutilizar as mesmas regras!</div>
+
+    <br><br>
+    <a id="link-referencia" href="#">Clique para </a>
+
+    <br><br>
+    <a id="link-suporte" href="#">Clique para entrar</a>
+
+    <br><br>
+    <a id="botao-voltar" href="#">Voltar</a>
+    
+    <br><br>
+    <button id="botao-voltar">Fechar página</button>
+</body>
+</html>

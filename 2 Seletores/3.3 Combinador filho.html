@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinador Filho</title>
+    <style>
+        /* Combinador: qual tipo de relação entre 2 seletores.
+        1. conbinador descendente: espaço em branco entre os seletores.
+        2. combinador filho: > entre os seletores.
+        3. combinador adjacente: + entre os seletores.
+        4. combinador geral: ~ entre os seletores.
+        
+        [SELETOR ] [COMBINADOR] [SELETOR ]           
+        */
+
+        div p {
+           background: lightgreen;
+        }
+
+        div > p {
+            color: blue;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div>
+        <p>parágrafo 1 dentro da div </p>
+        <p>parágrafo 2 dentro da div </p>
+       
+        <br>
+        <span>
+            <p>parágrafo 3 dentro da div, dentro do span</p>
+        </span>
+    </div>
+   
+    <br>
+
+    <p>parágrafo 4, fora da div </p>
+    <p>parágrafo 5, fora da div </p>
+    
+</body>
+</html>

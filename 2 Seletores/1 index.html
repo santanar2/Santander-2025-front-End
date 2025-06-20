@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+       /* 
+        * SELETORES: definem em quais elementos nós vamos aplicar o CSS
+        * 1. seletor de tag/tipo
+        * 2. seletor de id
+        * 3. seletor de classe
+        * 4. seletor universal
+        * 5. seletor de atributo
+        */
+        
+        h1 {
+            background: darkblue;
+            color: lightgreen;
+        }
+
+        div {
+            background: lightblue;
+            color: darkblue;
+        }
+
+        li {
+            background: lightgreen;
+            
+        }
+        
+        #texto-boas-vindas {
+            background: rgba(237, 119, 8, 0.865);
+            color: rgb(240, 240, 244);
+        }
+
+        #explicaçao-seletores {
+            background: rgba(237, 8, 183, 0.947);
+            color: rgb(240, 240, 244);
+        }
+
+        .seletores-mais-comuns {
+            background: rgba(225, 237, 8, 0.865);
+            color: rgb(243, 18, 18);
+        }
+
+        /* Transforma o texto em maiúsculo */
+        .texto-maiusculo {
+            text-transform: uppercase;
+        }
+
+        *  {
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>seletores CSS</h1>
+    <p id="texto-boas-vindas">Bem-Vindos!</p>
+
+    <p id="explicaçao-seletores">No CSS nós possuimos os seletores por ID</p>
+    <div>
+        <ul>
+
+            <li><b>  seletor de tag/tipo</b>Busca elementos por uma tag HTML especifica </li> 
+
+            <li><b>  seletor de id </b> Busca elementos através do atributo "id"</li>
+
+            <li><b>  seletor de classe</b>Busca elementos através do atributo "classe" </li>
+
+            <li><b> seletor universal </b>Seleciona todos os elementos HTML </li>
+
+            <li><b>  seletor de atributo </b>Seleciona elementos que possuem um atributo especifico em  nosso documento HTML e conseguimos também buscar atributos com um valor especifico </li>
+        </ul>
+    </div>
+
+    <div>
+        <ul>
+
+            <li class="seletores-mais-comuns texto-maiusculo"><b>  seletor de tag/tipo</b>Busca elementos por uma tag HTML especifica </li> 
+
+            <li class="seletores-mais-comuns"><b>  seletor de id </b> Busca elementos através do atributo "id"</li>
+
+            <li class="seletores-mais-comuns"><b>  seletor de classe</b>Busca elementos através do atributo "classe" </li>
+
+            <li class="seletores-mais-comuns"><b> seletor universal </b>Seleciona todos os elementos HTML </li>
+
+            <li class="seletores-mais-comuns"><b>  seletor de atributo </b>Seleciona elementos que possuem um atributo especifico em  nosso documento HTML e conseguimos também buscar atributos com um valor especifico </li>
+        </ul>
+    </div>
+
+<div>
+        <ul>
+
+            <li><b>  seletor de tag/tipo</b>Busca elementos por uma tag HTML especifica </li> 
+
+            <li><b>  seletor de id </b> Busca elementos através do atributo "id"</li>
+
+            <li><b>  seletor de classe</b>Busca elementos através do atributo "classe" </li>
+
+            <li><b> seletor universal </b>Seleciona todos os elementos HTML </li>
+
+            <li><b>  seletor de atributo </b>Seleciona elementos que possuem um atributo especifico em  nosso documento HTML e conseguimos também buscar atributos com um valor especifico </li>
+        </ul>
+    </div>
+
+    <p class="texto-negrito">Este texto ficará em negrito.</p>
+
+    <!-- Cria um parágrafo com texto de exemplo -->
+    <p>Texto de exemplo</p>
+
+    <!-- Cria uma lista de itens em maiúsculo -->
+<ul>
+  <li class="texto-maiusculo">Item em maiúsculo</li>
+</ul>
+
+<!-- Cria uma lista não ordenada de frutas -->
+<ul>
+  <li>Maçã</li>
+  <li>Banana</li>
+  <li>Laranja</li>
+</ul>
+
+<!-- Exibe uma mensagem no console -->
+<script>
+    console.log('Olá, mundo!');
+</script>
+
+<!-- Agrupa um título e um parágrafo -->
+<div>
+  <h2>Título</h2>
+  <p>Conteúdo do texto.</p>
+</div>
+
+</body>
+</html>

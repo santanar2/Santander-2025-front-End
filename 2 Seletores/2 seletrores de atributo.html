@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seletores de atributo</title>
+    
+    <style>
+        
+        [title="NETFLIX"] {
+            color: rgb(224, 18, 18);
+            font-weight: bold;
+        }
+
+        [title="GITHUB"] {
+            color: rgb(18, 18, 224);
+            font-weight: bold;
+        }
+
+        [title="GOOGLE"] {
+            color: rgb(18, 224, 18);
+            font-weight: bold;
+        }
+
+        [title="YOUTUBE"] {
+            color: rgb(224, 18, 224);
+            font-weight: bold;
+        }
+
+        [title~="texto"] {
+            color: rgb(146, 153, 12);
+            font-weight: bold;
+        }
+
+        [href^="https://www.netflix.com"] {
+           background: rgb(0, 255, 217);
+        }
+
+        [href^="https://www.google.com"] {
+           background: rgb(255, 0, 30);
+        }
+
+        [href$="https://www.twitter.com"] {
+           background: rgb(78, 53, 189);
+        }
+
+        /* Seleciona todos os parágrafos */
+        p {
+            /* Deixa o texto azul */
+            color: blue;
+            /* Centraliza o texto */
+            text-align: center;
+        }
+
+        /* Seleciona elementos com a classe 'destaque' */
+        .destaque {
+            /* Deixa o texto em negrito */
+            font-weight: bold;
+            /* Adiciona um fundo amarelo */
+            background-color: yellow;
+        }
+    </style>
+    
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <a title="NETFLIX" href="https://www.netflix.com">Netflix</a>
+            </li>
+
+            <li>
+                <a title="GITHUB" href="https://github.com">GitHub</a>
+            </li>
+
+            <li>
+                <a title="GOOGLE" href="https://www.google.com">Google</a>
+            </li>
+            
+            <li>
+                <a title="YOUTUBE" href="https://www.youtube.com">YouTube</a>   
+            </li>
+            
+            <li>
+                <a title="texto TWITTER" href="https://www.twitter.com">Twitter</a>   
+            </li>
+        </ul>
+    </div>
+
+    <p>Este é um parágrafo de exemplo.</p>
+</body>
+</html>

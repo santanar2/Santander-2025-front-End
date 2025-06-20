@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS largura e altura</title>
+    <style>
+        /*
+        * Propriedades básicas do CSS
+        * width: largura do elemento
+        * height: altura do elemento
+        */
+
+        /* Remova ou comente este bloco!
+        div {
+            background: lightblue;
+            width: 500px;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+        */
+
+        button {
+            background: rgb(252, 84, 1);
+            width: auto;
+            height: 30px;
+        }
+
+        button#CSS {
+            width: initial;
+            height: 30px;
+        }
+
+        #div-01 {
+            background: lightgreen;
+            width: 200px;
+            height: 200px;
+        }
+
+        #div-02 {
+            background: lightcoral;
+            height: inherit;
+        }   
+        
+        .faixa-azul {
+            background: lightblue;
+            width: 250px;
+            height: 50px;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Faixa azul apenas no topo -->
+    <div class="faixa-azul">TRILHA DE CSS</div>
+    <br>
+    <button>TRILHA de CSS</button>
+    <br><br>
+    <button id="CSS">CSS</button>
+    <br><br>
+    <div id="div-01">Sou a div 01
+        <div id="div-02">Sou a div 02</div>
+    </div>
+</body>
+</html>
