@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS propriedade object-fit</title>
+    <style>
+
+        div {
+            width: 200px;/* largura do container */
+            height: 300px;/* altura do container */
+            border: 5px solid blue;/* borda do container */
+        }  
+        
+        img {
+            width: 100%;/* largura da imagem */
+            height: 100%;/* altura da imagem */
+            
+        }
+        
+        #contain {
+            object-fit: contain; /* Ajusta a imagem para caber dentro do container */
+        }
+
+        #fill {
+            object-fit: fill; /* Preenche o container, distorcendo a imagem se necessário */
+        }
+
+        #cover {
+            object-fit: cover; /* Cobre o container, mantendo a proporção da imagem */
+        } 
+        
+        #none {
+            object-fit: none; /* Não aplica nenhum ajuste, a imagem mantém seu tamanho original */
+        }
+
+        #scale-down {
+            object-fit: scale-down; /* Reduz a imagem para caber no container, mantendo a proporção */
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code> object-fit</code></h1>
+
+    <code>object-fit: fill;</code> (padrão)
+
+    <div>
+        <img src="https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg" alt="" id="fill">
+    </div>    
+
+    <br>
+
+    <code>object-fit: contain;</code>
+    <div>
+        <img src="https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg" alt="" id="contain">
+    </div>
+
+    <br>
+
+    <code>object-fit: cover; </code> 
+    <div>
+        <img src="https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg" alt="" id="cover">
+
+    </div>
+
+    <br>
+
+    <code>object-fit: none; </code> 
+    <div>
+        <img src="https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg" alt="" id="none">
+
+    </div>
+
+    <br>
+
+    <code>object-fit: scale-down; </code> 
+    <div>
+        <img src="https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg" alt="" id="scale-down">
+
+    </div>
+
+    <br>
+
+    <br>
+
+
+</body>
+</html>
