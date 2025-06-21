@@ -1,0 +1,84 @@
+ body {
+        font-family: Roboto, sans-serif;
+    }
+
+    .exemplo {
+        background-color: rgb(76, 228, 81);
+        width: 300px;
+        height: 300px;
+        
+        border: 20px solid red;
+    }
+
+    .exemplo-2 {
+        background-color: rgb(242, 67, 67);
+        width: 300px;
+        height: 300px;
+        border-bottom: 20px solid blue;
+    }
+
+    .exemplo-3 {
+        background-color: rgb(76, 218, 228);
+        width: 300px;
+        height: 300px;
+        border-left: 20px solid blue;
+
+    }
+
+    .exemplo-4 {
+        background-color: orange;
+        width: 300px;
+        height: 300px;
+        border-right: 20px solid blue;
+    }
+
+    .exemplo-5 {
+        background-color: rgb(255, 0, 204);
+        width: 300px;
+        height: 300px;
+        border-top: 20px solid blue;
+    }
+
+    .exemplo-6 {
+        background-color: rgb(30, 0, 255);
+        width: 300px;
+        height: 300px;
+        border-top: 20px solid rgb(255, 55, 0);
+        border-bottom: 20px dashed rgb(210, 223, 24);
+
+    }
+
+    .exemplo-7 {
+        background-color: rgb(81, 194, 214);
+        width: 300px;
+        height: 300px;
+        border-top: 20px solid blueviolet;
+        border-bottom-style: double;
+        border-bottom-width: 20px;
+
+    }
+
+    .exemplo-8 {
+        background-color: rgb(210, 223, 24);
+        width: 300px;
+        height: 300px;
+        border-style: dotted dashed;
+        border-width:10px;
+    }
+
+    .exemplo-9 {
+        background-color: rgb(183, 32, 229);
+        width: 300px;
+        height: 300px;
+        border-style: dotted dashed solid;
+        border-width:10px;
+    }
+
+    .exemplo-10 {
+        background-color: rgb(229, 72, 135);
+        width: 300px;
+        height: 300px;
+        border-style: dotted dashed solid double;
+        border-width:10px;
+    }
+

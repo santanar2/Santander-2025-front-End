@@ -1,0 +1,159 @@
+ body {
+        font-family: Roboto, sans-serif;
+    }
+
+    .exemplo {
+        background-color: rgb(76, 228, 81);
+        width: 300px;
+        height: 300px;
+        
+        border: 20px red solid;
+        border-radius: 20px;
+    }
+
+    .exemplo-2 {
+        background-color: rgb(67, 76, 242);
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    .exemplo-3 {
+        background-color: rgb(76, 218, 228);
+        width: 300px;
+        height: 300px;
+        border-radius: 20px 10px;
+
+    }
+
+    .exemplo-4 {
+        background-color: orange;
+        width: 300px;
+        height: 300px;
+        border-radius: 20px 10px 30px;
+    }
+
+    .exemplo-5 {
+        background-color: rgb(255, 0, 204);
+        width: 300px;
+        height: 300px;
+        border-radius: 20px 10px 30px 50px;
+    }
+
+    .exemplo-6 {
+        background-color: rgb(30, 0, 255);
+        width: 300px;
+        height: 300px;
+        border-radius: 50px/100px;
+
+    }
+
+    .exemplo-7 {
+        background-color: rgb(81, 194, 214);
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+
+    }
+
+    .exemplo-8 {
+        background-color: rgb(210, 223, 24);
+        width: 300px;
+        height: 400px;
+        border-radius: 50%;
+    }
+
+    .exemplo-9 {
+        background-color: rgb(183, 32, 229);
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 20px solid greenyellow;        /* Define a fonte padrão para o corpo da página */
+        body {
+            font-family: Roboto, sans-serif;
+        }
+        
+        /* Exemplo 1: Borda vermelha sólida de 20px e cantos arredondados em 20px */
+        .exemplo {
+            background-color: rgb(76, 228, 81);
+            width: 300px;
+            height: 300px;
+            border: 20px red solid;
+            border-radius: 20px;
+        }
+        
+        /* Exemplo 2: Apenas cantos arredondados em 20px */
+        .exemplo-2 {
+            background-color: rgb(67, 76, 242);
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+        }
+        
+        /* Exemplo 3: Cantos arredondados em 20px (superior esquerdo e inferior direito) e 10px (superior direito e inferior esquerdo) */
+        .exemplo-3 {
+            background-color: rgb(76, 218, 228);
+            width: 300px;
+            height: 300px;
+            border-radius: 20px 10px;
+        }
+        
+        /* Exemplo 4: Três valores para border-radius (20px, 10px, 30px) */
+        .exemplo-4 {
+            background-color: orange;
+            width: 300px;
+            height: 300px;
+            border-radius: 20px 10px 30px;
+        }
+        
+        /* Exemplo 5: Quatro valores para border-radius (20px, 10px, 30px, 50px) */
+        .exemplo-5 {
+            background-color: rgb(255, 0, 204);
+            width: 300px;
+            height: 300px;
+            border-radius: 20px 10px 30px 50px;
+        }
+        
+        /* Exemplo 6: Raio elíptico, horizontal 50px e vertical 100px */
+        .exemplo-6 {
+            background-color: rgb(30, 0, 255);
+            width: 300px;
+            height: 300px;
+            border-radius: 50px/100px;
+        }
+        
+        /* Exemplo 7: Borda totalmente arredondada (círculo) */
+        .exemplo-7 {
+            background-color: rgb(81, 194, 214);
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+        
+        /* Exemplo 8: Borda totalmente arredondada (círculo) com altura diferente */
+        .exemplo-8 {
+            background-color: rgb(210, 223, 24);
+            width: 300px;
+            height: 400px;
+            border-radius: 50%;
+        }
+        
+        /* Exemplo 9: Círculo com borda sólida verde-limão de 20px */
+        .exemplo-9 {
+            background-color: rgb(183, 32, 229);
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 20px solid greenyellow;
+        }
+        
+        /* Exemplo 10: Borda com estilos diferentes em cada lado e largura de 10px */
+        .exemplo-10 {
+            background-color: rgb(229, 72, 135);
+            width: 300px;
+            height: 300px;
+            border-style: dotted dashed solid double;
+            border-style: dotted dashed solid double;
+    }
+
+}

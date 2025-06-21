@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tamnho de borda</title>
+    <link rel="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" href="">
+</head>
+
+<style>
+    body {
+        font-family: Roboto, sans-serif;
+    }
+
+    .exemplo {
+        background-color: rgb(76, 228, 81);
+        width: 300px;
+        height: 300px;
+        border-style: solid;
+        border-width: 10px;
+    }
+
+      .exemplo-2 {
+        background-color: rgb(242, 67, 67);
+        width: 300px;
+        height: 300px;
+        border-style: solid;
+        border-width: 10px 20px;
+    }
+
+      .exemplo-3 {
+        background-color: rgb(76, 218, 228);
+        width: 300px;
+        height: 300px;
+        border-style: solid;
+        border-width: 10px 20px 30px;
+    }
+
+    .exemplo-4 {
+        background-color: orange;
+        width: 300px;
+        height: 300px;
+        border-style: solid;
+        border-width:10px 20px 30px 40px ;
+    }
+
+</style>
+
+<body>
+    <h1>Bordas</h1>
+    <p>Podemos definir as configurações das nossas  bordas atraés das propriedades:</p>
+    <ul>
+
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Exemplo,borda-width 10px (todos os lados) </h2>
+    <div class="exemplo"></div>
+    <br><br>
+
+    <h2>Exemplo-2, borda-width 10px(no up e down), 20px (lefth e right) </h2>
+    <div class="exemplo-2"></div>
+    <br><br>
+
+    <h2> Exemplo-3, borda-width 10px(no up), 20px (lefth e right), 30px (down)</h2>
+    <div class="exemplo-3"></div>
+    <br><br>
+
+    <h2> Exemplo-4, borda-width 10px(no up), 20px (right), 30px (down), 40px (lefth) </h2>
+    <div class="exemplo-4"></div>
+    <br><BR></BR>
+
+
+</body>
+</html>
