@@ -1,0 +1,31 @@
+/* Importação da fonte Open Sans */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+
+* {
+  margin: 200px;
+  padding: 200px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Caixa base */
+.exemplo {
+  width: 200px;
+  height: 200px;
+  border: 20px solid transparent;
+  background-color: black;
+}
+
+/* Exemplo 1: imagem (use uma imagem de teste online) */
+#exemplo-1 {
+  border-image-source: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Star_icon-72a7cf.svg/120px-Star_icon-72a7cf.svg.png');
+  border-image-slice: 30;
+  border-image-repeat: round;
+}
+
+/* Exemplo 2: gradiente */
+#exemplo-2 {
+  border-image-source: linear-gradient(red, blue);
+  border-image-slice: 1;
+  border-image-repeat: stretch;
+}
