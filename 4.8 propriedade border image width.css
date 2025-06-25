@@ -36,7 +36,7 @@ li {
     width: 200px;
     height: 200px;
     border: 30px solid transparent;
-    background-color: hsl(0, 0%, 20%);
+    background-color: #333;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
@@ -45,18 +45,30 @@ li {
     font-weight: bold;
 }
 
+
 /* Exemplo adicional: padrão repetido */
 #exemplo-1 {
     border-image-source: url('exercicios/Frame\ 1.png');
     border-image-repeat: repeat;
-  
+    border-image-slice: 169;
+    border-image-width: 10px 20px 30px 40px;
+    
 }
 
-/* Exemplo 1: usando uma imagem de padrão decorativo */
+/* Exemplo adicional: padrão repetido */
 #exemplo-2 {
-    border-image-source: linear-gradient(red, blue);
+    border-image-source: url('exercicios/Frame\ 1.png');
+    border-image-repeat: repeat;
+    border-image-slice: 169;
+    border-image-width: auto;
     
 }
 
 
+/* Exemplo 2: usando gradiente */
+#exemplo-3 {
+    border-image-source: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+    border-image-slice: 10;
+
+}
 
