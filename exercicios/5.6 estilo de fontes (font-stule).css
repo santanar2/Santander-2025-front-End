@@ -1,0 +1,15 @@
+#tamanho {
+    font-size: 20px;
+}
+
+#normal  {
+    font-style: normal;
+}
+
+#italic {
+    font-style: italic;
+}
+
+#oblique {
+    font-style: oblique;
+}

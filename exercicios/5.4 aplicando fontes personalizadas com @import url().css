@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+
+* {
+    font-family: 'Bitcount Grid Double', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+#projeto {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+ul {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Estilos específicos para demonstrar diferentes pesos da fonte */
+#p-1 {
+    font-weight: 200;
+}
+
+#p-2 {
+    font-weight: 400;
+}
+
+#p-3 {
+    font-weight: 600;
+}
+
+#p-4 {
+    font-weight: 700;
+}
+
+#p-5 {
+    font-weight: 900;
+}

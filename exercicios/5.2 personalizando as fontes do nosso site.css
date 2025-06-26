@@ -1,0 +1,29 @@
+* {
+    font-family: fantasy;  
+}
+
+#projeto {
+    font-family: sans-serif;
+
+}
+
+#p-1 {
+    font-style: italic;
+}
+
+#p-2 {
+    font-size: small;
+}
+
+#p-3  {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#p-4  {
+    font-family: initial;
+}
+
+#p-5  {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+

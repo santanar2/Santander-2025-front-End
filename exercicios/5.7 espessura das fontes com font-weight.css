@@ -1,0 +1,15 @@
+#tamanho {
+    font-weight: 900px;
+}
+
+#normal  {
+    font-weight: normal;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+div {
+    font-weight: lighter;
+}

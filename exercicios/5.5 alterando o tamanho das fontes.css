@@ -1,0 +1,31 @@
+#tamanho {
+    font-size: 60px;
+}
+
+#xx-small {
+    font-size:  50px;
+}
+
+#x-small {
+    font-size: 40px;
+}
+
+#small {
+    font-size: 30px;
+}
+
+#x-larger {
+    font-size: x-large;
+}
+
+#xx-large {
+    font-size: xx-large;
+}
+
+div {
+    font-size:  20px;
+}
+
+div p {
+    font-size: smaller;
+}
