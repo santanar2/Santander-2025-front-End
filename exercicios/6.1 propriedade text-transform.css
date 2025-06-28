@@ -1,0 +1,23 @@
+#p-1 {
+    text-transform: capitalize;
+}
+
+#p-2 {
+    text-transform: uppercase;
+}
+
+#p-3 {
+    text-transform: lowercase;
+}
+
+#p-4 {
+    text-transform: initial;
+}
+
+#p-5 {
+    text-transform: none;
+}
+
+#p-6 {
+    text-transform: inherit;
+}
