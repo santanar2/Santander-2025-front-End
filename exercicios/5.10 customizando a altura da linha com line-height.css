@@ -1,5 +1,6 @@
+/* Define o tamanho da fonte (font-size) para 20 pixels em todos os parágrafos */
 p {
     font-size: 20px;
+    /* Define a altura das linhas (line-height) como 2 vezes o tamanho da fonte atual, ou seja, 40px neste caso */
     line-height: 2;
 }
-

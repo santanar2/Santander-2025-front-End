@@ -1,16 +1,20 @@
+/* Define uma largura fixa e uma borda preta para elementos com a classe "exemplo" */
 .exemplo {
     width: 1370px;
     border: 1px solid black;
 }
 
+/* Adiciona espaçamento interno e um fundo lavanda ao parágrafo com id "p-1" */
 #p-1 {
     padding: 10px;
     background-color: lavender;
 }
 
+/* Adiciona espaçamento interno, fundo lavanda e alinha o texto de forma justificada ao parágrafo com id "p-2".
+   (A propriedade text-align pode também ser usada com os valores: center, left ou right) */
 #p-2 {
     padding: 10px;
     background-color: lavender;
     text-align: justify;
-    /* center, left, right*/
+    /* center, left, right */
 }

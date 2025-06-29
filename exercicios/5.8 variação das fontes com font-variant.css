@@ -1,3 +1,14 @@
-#exemplo    {
+/* Define a cor de fundo do corpo da página */
+body {
+    background-color: #f0f0f0;
+}
+
+/* Usa letras em pequenas maiúsculas nos títulos */
+h1 {
     font-variant: small-caps;
+}
+
+/* Centraliza o texto dos parágrafos */
+p {
+    text-align: center;
 }

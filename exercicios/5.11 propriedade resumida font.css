@@ -1,3 +1,12 @@
+/* 
+Aplica várias propriedades de fonte ao elemento com id "exemplo" em uma única linha:
+- italic: deixa o texto em itálico (font-style)
+- small-caps: usa pequenas maiúsculas (font-variant)
+- bold: deixa o texto em negrito (font-weight)
+- 24px: define o tamanho da fonte (font-size)
+- /2: define o espaçamento entre linhas como 2 vezes o tamanho da fonte (line-height)
+- Georgia, serif: define a família da fonte, usando Georgia ou, caso não exista, qualquer fonte serifada (font-family)
+*/
 #exemplo {
     font: italic small-caps bold 24px/2 Georgia, serif;
 }

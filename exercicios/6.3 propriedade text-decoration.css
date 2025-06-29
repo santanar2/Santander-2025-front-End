@@ -1,0 +1,35 @@
+/* Sublinha o texto do elemento com id "h1" usando uma linha dupla */
+#h1 {
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+/* Remove qualquer decoração (sublinhado, etc.) do link com id "a-1" */
+#a-1 {
+    text-decoration: none;
+}
+
+/* Adiciona um traço (riscado) em todo o texto do parágrafo com id "p-1" */
+#p-1 {
+    text-decoration: line-through;
+}
+
+/* Adiciona uma linha acima (overline) do texto do parágrafo com id "p-2" */
+#p-2 {
+    text-decoration: overline;
+}
+
+/* Sublinha o texto do parágrafo com id "p-3" usando um estilo pontilhado (dotted) */
+#p-3 {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+/* Sublinha o texto do parágrafo com id "p-4" usando um sublinhado ondulado (wavy),
+   cor vermelha e espessura de 3 pixels */
+#p-4 {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(240, 9, 9);
+    text-decoration-thickness: 3px;
+}

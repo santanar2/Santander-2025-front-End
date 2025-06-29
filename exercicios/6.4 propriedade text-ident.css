@@ -1,0 +1,4 @@
+/* Aplica um recuo (indentação) de 10 pixels na primeira linha do parágrafo com id "p-1" */
+#p-1 {
+    text-indent: 10px;
+}

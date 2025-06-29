@@ -1,23 +1,29 @@
+/* Deixa a primeira letra de cada palavra em maiúscula no parágrafo com id "p-1" */
 #p-1 {
     text-transform: capitalize;
 }
 
+/* Transforma todas as letras em MAIÚSCULAS no parágrafo com id "p-2" */
 #p-2 {
     text-transform: uppercase;
 }
 
+/* Transforma todas as letras em minúsculas no parágrafo com id "p-3" */
 #p-3 {
     text-transform: lowercase;
 }
 
+/* Usa o valor padrão do navegador para text-transform no parágrafo com id "p-4" */
 #p-4 {
     text-transform: initial;
 }
 
+/* Remove qualquer transformação de texto no parágrafo com id "p-5" */
 #p-5 {
     text-transform: none;
 }
 
+/* Herda o valor de text-transform do elemento pai no parágrafo com id "p-6" */
 #p-6 {
     text-transform: inherit;
 }
