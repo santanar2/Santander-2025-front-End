@@ -1,0 +1,53 @@
+/* 
+Estiliza os elementos com a classe "exemplo":
+Define uma largura fixa, cor do texto em tom escuro e fundo vermelho.
+*/
+.exemplo {
+    width: 120px;
+    color: rgb(17, 0, 0);
+    background-color: rgb(249, 2, 2);
+}
+
+/* 
+Aplica "word-wrap: normal" ao parágrafo com id "normal":
+Palavras muito longas não serão quebradas, podendo ultrapassar o limite do elemento.
+⚠️ OBS: O correto seria utilizar "word-break" ou "overflow-wrap".
+*/
+#normal {
+    word-break: normal; /* Corrigido para a propriedade correta */
+}
+
+/* 
+Aplica "word-wrap: break-word" ao parágrafo com id "break-word":
+Permite que palavras longas sejam quebradas ao atingir a borda do elemento.
+⚠️ OBS: A propriedade recomendada atualmente é "overflow-wrap: break-word".
+*/
+#break-word {
+    overflow-wrap: break-word; /* Corrigido para a forma moderna e suportada */
+}
+
+/* 
+Estiliza os elementos com a classe "exemplo-2":
+Define largura fixa e cor de fundo aquamarina.
+*/
+.exemplo-2  {
+    width: 120px;
+    background-color: aquamarine;
+}
+
+/* 
+Aplica word-break: break-all ao parágrafo com id "break-all":
+Palavras podem ser quebradas entre qualquer caractere, útil para strings contínuas sem espaço.
+*/
+#break-all {
+    word-break: break-all;
+}
+
+/* 
+Aplica word-break: keep-all ao parágrafo com id "keep-all":
+Evita a quebra de palavras em idiomas como chinês, japonês e coreano.
+Em textos em português ou inglês, o efeito é quase igual ao normal.
+*/
+#keep-all {
+    word-break: keep-all; /* Corrigido o seletor de id de "kell-all" para "keep-all" */
+}

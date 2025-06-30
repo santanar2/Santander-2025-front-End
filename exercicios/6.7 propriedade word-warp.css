@@ -1,0 +1,25 @@
+/* 
+Estiliza todos os elementos com a classe "exemplo":
+Define largura fixa, cor do texto e cor de fundo.
+*/
+.exemplo {
+    width: 120px;
+    color: rgb(17, 0, 0);
+    background-color: rgb(249, 2, 2);
+}
+
+/* 
+Aplica "word-wrap: normal" ao elemento com id "normal":
+As palavras muito longas não serão quebradas, podendo ultrapassar o limite do elemento.
+*/
+#normal {
+    word-wrap: normal;
+}
+
+/* 
+Aplica "word-wrap: break-word" ao elemento com id "break-word":
+Permite que palavras longas sejam quebradas para não ultrapassar o limite do elemento.
+*/
+#break-word {
+    word-wrap: break-word;
+}

@@ -1,0 +1,24 @@
+/*
+Este arquivo define estilos para demonstrar a propriedade CSS writing-mode, que controla a direção e orientação do texto.*/
+
+
+/*texto e fundo para destacar cada exemplo.
+ */
+.exemplo    {
+    width: 120px;
+    height: 120px;
+    color: black;
+    background-color: greenyellow;
+}
+/*- #exemplo-1: Apresenta o texto na orientação padrão horizontal. */
+#exemplo-1  {
+    writing-mode: horizontal-tb;
+}
+/*- #exemplo-2: Apresenta o texto na orientação vertical, linhas da direita para a esquerda. */
+#exemplo-2  {
+    writing-mode: vertical-rl;
+}
+/*- #exemplo-3: Apresenta o texto na orientação vertical, linhas da esquerda para a direita. */
+#exemplo-3  {
+    writing-mode: vertical-lr;
+}

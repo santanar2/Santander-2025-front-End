@@ -1,0 +1,36 @@
+/* Define a largura do elemento com a classe 'exemplo' e a cor de fundo */
+.exemplo {
+    width: 200px;
+    background-color: chartreuse;
+}
+
+/* Define a cor de fundo e a cor do texto para todos os elementos <span> */
+span {
+    background-color: seagreen;
+    color: white;
+}
+
+/* Faz com que o texto dentro do elemento com o ID 'nowrap' não quebre de linha */
+#nowrap {
+    white-space: nowrap;
+}
+
+/* Faz com que o texto dentro do elemento com o ID 'pre' mantenha os espaços e quebras de linha exatamente como no HTML */
+#pre {
+    white-space: pre;
+}
+
+/* Mantém os espaços e quebras de linha do HTML, mas colapsa múltiplos espaços em um só */
+#pre-line {
+    white-space: pre-line;
+}
+
+/* Mantém todos os espaços e quebras de linha, e permite que o texto quebre automaticamente para uma nova linha se necessário */
+#pre-warp {
+    white-space: pre-wrap;
+}
+
+/* Mantém todos os espaços, quebras de linha e também quebra o texto automaticamente, incluindo múltiplos espaços em branco */
+#break-spaces {
+    white-space: break-spaces;
+}

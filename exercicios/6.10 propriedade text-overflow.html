@@ -1,0 +1,55 @@
+<!--
+Este documento HTML demonstra o uso da propriedade CSS 'text-overflow', que controla como o conteúdo textual excedente é exibido dentro de um container com largura limitada.
+Inclui três exemplos práticos:
+- text-overflow: clip;       // O texto excedente é simplesmente cortado (padrão).
+- text-overflow: ellipsis;   // O texto excedente é substituído por reticências ("...").
+- text-overflow: string;     // É possível exibir um texto personalizado (string) ao truncar, mas necessita suporte de navegador e configuração avançada (não funcionará em todos navegadores).
+Para visualizar o efeito, é necessário que os elementos tenham largura fixa, white-space: nowrap e overflow: hidden definidos no CSS externo.
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="6.10 propriedade text overflow.css">
+    <title>CSS propriedade text-overflow</title>
+</head>
+<body>
+    <h2>Propriedade <code>text-overflow</code></h2>
+    <!-- Título explicando o tema abordado -->
+
+    <p>Controla a forma como o texto que ultrapassa os limites do container é apresentado visualmente.</p>
+    <!-- Descrição simples da propriedade 'text-overflow' -->
+
+    <i>Exemplo:</i>
+    <!-- Indicação de que abaixo há exemplos práticos -->
+
+    <code>text-overflow: clip;</code>
+    <!-- Primeiro exemplo: texto excedente é cortado/ocultado -->
+
+    <p id="exemplo-1" class="exemplo">
+        Chega de saudade<br>
+        A realidade é que sem ela não há paz
+    </p>
+
+    <br>
+
+    <code>text-overflow: ellipsis;</code>
+    <!-- Segundo exemplo: texto excedente é substituído por "..." -->
+
+    <p id="exemplo-2" class="exemplo">
+        Chega de saudade<br>
+        A realidade é que sem ela não há paz
+    </p>
+
+    <br>
+
+    <code>text-overflow: string;</code>
+    <!-- Terceiro exemplo: texto excedente é substituído por uma string personalizada (suporte limitado) -->
+
+    <p id="exemplo-3" class="exemplo">
+        Chega de saudade<br>
+        A realidade é que sem ela não há paz
+    </p>
+</body>
+</html>

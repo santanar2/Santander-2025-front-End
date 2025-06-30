@@ -1,0 +1,31 @@
+/*Este arquivo CSS demonstra o uso da propriedade 'text-overflow' para controlar a exibição de textos que ultrapassam os limites do elemento. */
+
+/* - .exemplo: Define largura, cor da fonte e cor de fundo para destacar os exemplos.*/*
+.exemplo    {
+    width: 200px;
+    color: black;
+    background-color: rgb(248, 47, 255);
+}
+
+/* - p: Garante que o texto não quebre linha e ative o corte visual do conteúdo excedente.*/
+p{
+     white-space: nowrap;
+    overflow: hidden;
+}
+
+/* - #exemplo-1: Aplica text-overflow: clip (o texto excedente é simplesmente cortado, sem qualquer indicação visual).*/
+#exemplo-1  {
+    text-overflow: clip;
+    
+}
+
+/* - #exemplo-2: Aplica text-overflow: ellipsis (o texto excedente é substituído por reticências "..."). */
+#exemplo-2  {
+    text-overflow: ellipsis;
+}
+
+/* - #exemplo-3: (vazio) Aqui você pode aplicar 'text-overflow' personalizado como 'text-overflow: ">>>";', caso o navegador ofereça suporte, ou deixar vazio para seguir o padrão.
+*/
+#exemplo-3  {
+    text-overflow: ;
+}

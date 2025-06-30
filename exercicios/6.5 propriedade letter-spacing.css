@@ -1,0 +1,33 @@
+/* 
+Aplica um espaçamento negativo entre as letras,
+fazendo com que os caracteres fiquem mais próximos uns dos outros.
+*/
+#exemplo-letter-spacing {
+    letter-spacing: -2px;
+}
+
+/*
+Aplica espaçamento maior entre as palavras (15px)
+e um espaçamento extra entre as letras (3px),
+deixando o texto mais espaçado tanto entre as letras quanto entre as palavras.
+*/
+#exemplo-letter-spacing-1 {
+    word-spacing: 15px;
+    letter-spacing: 3px;
+}
+
+/*
+Usa o valor padrão de espaçamento entre palavras,
+ou seja, sem alteração específica de word-spacing nesse parágrafo.
+*/
+#exemplo-word-spacing {
+    word-spacing: normal;
+}
+
+/*
+Aumenta o espaçamento entre as palavras para 20px,
+deixando os intervalos entre palavras bem mais largos.
+*/
+#exemplo-word-spacing-1 {
+    word-spacing: 20px;
+}

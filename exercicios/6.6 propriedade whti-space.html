@@ -1,0 +1,87 @@
+Para deixar seu código mais claro e didático, adicione comentários explicando o propósito de cada bloco de exemplo de uso da propriedade CSS **white-space**. Os comentários em HTML são marcados com `<!-- ... -->` logo acima do elemento ou trecho a ser explicado.
+
+Veja abaixo como você pode anotar o seu código:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="6.6 propriedade whit-space.css">
+    <title>CSS propriedade white-space</title>
+</head>
+<body>
+    <h2>Propriede <code>whit-space</code></h2>
+    <p>Define como os espaços emm branco do texto de um determinado elemento é tratado.</p>
+    <i>Exempos:</i> <br><br>
+
+    <!-- Exemplo: white-space: normal; 
+         Espaços em branco extras e quebras de linha são ignorados,
+         o texto é ajustado automaticamente quando chega ao fim da linha. -->
+    <code>white-space: normal;</code> 
+    <p class="exemplo">
+        <span>
+            but    ere she from she from the church-door stepped 
+            she smiled and told us why: 'It was a wicked woman's curse,' Qhot she, 'and what care I? She smiled, and smiled, and passed it off Ere from the door she step--
+        </span>
+    </p>
+
+    <!-- Exemplo: white-space: nowrap;
+         Espaços em branco extras são ignorados e o texto nunca quebra de linha automaticamente. 
+         Só haverá quebra de linha se houver uma tag <br>. -->
+    <code>white-space: nowrap;</code>
+    <p id="nowrap" class="exemplo">
+        <span>
+            but ere she from she from the church-door stepped she smiled and told us why: 'It was a wicked woman's curse,' Qhot she, 'and what care I? She smiled, and smiled, and passed it off Ere from the door she step--
+        </span>
+    </p>
+
+    <!-- Exemplo: white-space: pre;
+         Todos os espaços em branco e quebras de linha no código-fonte são preservados e exibidos no navegador.
+         O texto só quebra linha quando houver uma quebra real no HTML. -->
+    <code>white-space: pre;</code>
+    <p id="pre" class="exemplo">
+        <span>
+            but ere she from she from the church-door stepped she smiled and told us why: 'It was a wicked woman's curse,' Qhot she, 'and what care I? She smiled, and smiled, and passed it off Ere from the door she step--
+        </span>
+    </p>
+
+    <!-- Exemplo: white-space: pre-line;
+         Espaços extras são ignorados, mas as quebras de linha escritas no código HTML são preservadas.
+         O texto quebra automaticamente quando necessário. -->
+    <code>white-space: pre-line;</code>
+    <p id="pre-line" class="exemplo">
+        <span>
+            but ere she from she from the church-door stepped she smiled and told us why: 'It was a wicked woman's curse,' Qhot she, 'and what care I? She smiled, and smiled, and passed it off Ere from the door she step--
+        </span>
+    </p>
+
+    <!-- Exemplo: white-space: pre-wrap;
+         Todos os espaços em branco e quebras de linha são preservados,
+         mas o texto também quebra automaticamente quando necessário para caber na largura do elemento. -->
+    <code>white-space: pre-wrap;</code>
+    <p id="pre-wrap" class="exemplo">
+        <span>
+            but ere she from she from the church-door stepped she smiled and told us why: 'It was a wicked woman's curse,' Qhot she, 'and what care I? She smiled, and smiled, and passed it off Ere from the door she step--
+        </span>
+    </p>
+
+    <!-- Exemplo: white-space: break-spaces;
+         Igualmente ao pre-wrap, mas permite quebras em espaços em branco consecutivos.
+         Espaços extras no final das linhas também são preservados e podem causar quebras. (Disponível em navegadores modernos.) -->
+    <code>white-space: break-spaces;</code>
+    <p id="break-spaces" class="exemplo">
+        <span>
+            but ere she from she from the church-door stepped she smiled and told us why: 'It was a wicked woman's curse,' Qhot she, 'and what care I? She smiled, and smiled, and passed it off Ere from the door she step--
+        </span>
+    </p>
+</body>
+</html>
+```
+
+Esses comentários facilitam a leitura e o entendimento do propósito de cada exemplo relacionado ao comportamento dos espaços em branco definido pela propriedade CSS **white-space**[1][2][4].
+
+    
+</body>
+</html>

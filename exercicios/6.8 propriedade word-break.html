@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Importa o arquivo CSS responsável pelos estilos da página -->
+    <link rel="stylesheet" href="6.8 propriedade word-break.css">
+    
+    <title>CSS propriedade word-wrap</title>
+</head>
+<body>
+    <!-- Título principal sobre a propriedade CSS word-wrap -->
+    <h2>propriedade <code>word-wrap</code></h2>
+    
+    <!-- Explicação textual sobre a função da propriedade word-wrap -->
+    <p>Define, caso uma palavra seja muito grande para caber em uma linha, se ela será quebrada em qualquer caractere para que uma parte dela fique na linha e o restante na próxima, ou senão, toda palavra deve ficar na mesma linha e ultrapassar os limites que definimos para o elemento.</p>
+
+    <!-- Demonstração com word-wrap: normal (a palavra não será quebrada, e pode ultrapassar o limite do container) -->
+    <code>word-wrap: normal;</code>
+    <p id="normal" class="exemplo">Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS</p>
+
+    <!-- Demonstração com word-wrap: break-word (a palavra longa será quebrada ao atingir o limite do container) -->
+    <code>word-wrap: break-word;</code>
+    <p id="break-word" class="exemplo">Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS</p>
+
+    <!-- Título sobre a propriedade word-break -->
+    <h2>Propriedade <code>word-break</code></h2>
+
+    <!-- Breve explicação sobre a propriedade word-break -->
+    <p>Define quando o nosso texto deve ter uma quebra de linha.</p>
+
+    <!-- Demonstração com word-break: normal (não há quebra dentro de palavras; só entre palavras) -->
+    <code>word-break: normal;</code>
+    <p id="normal" class="exemplo-2">Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS</p>
+
+    <!-- Demonstração com word-break: break-all (as palavras podem ser quebradas em qualquer caractere) -->
+    <code>word-break: break-all;</code>
+    <p id="break-all" class="exemplo-2">Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS</p>
+
+    <!-- Demonstração com word-break: keep-all (em línguas como o coreano, impede que as palavras sejam quebradas) -->
+    <code>word-break: keep-all;</code>
+    <p id="keep-all" class="exemplo-2">Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS</p>
+
+</body>
+</html>
