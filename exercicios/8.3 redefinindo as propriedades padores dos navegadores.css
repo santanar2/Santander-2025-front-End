@@ -1,0 +1,22 @@
+/* 
+  Regra global para redefinir os estilos padrões dos navegadores em todos os elementos.
+  Remove espaçamento interno (padding), margem externa (margin),
+  alinha os elementos na linha de base (vertical-align),
+  remove marcadores de listas (list-style)
+  e zera qualquer borda (border).
+*/
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+}
+
+/* 
+  Estiliza todos os elementos <h1>,
+  definindo a cor do texto como vermelha (red).
+*/
+h1 {
+    color: red;
+}

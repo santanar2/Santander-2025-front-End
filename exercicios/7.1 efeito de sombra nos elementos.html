@@ -3,10 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importa o arquivo CSS externo com estilos e sombras -->
     <link rel="stylesheet" href="7.1 efeito de sombra nos elementos.css">
     <title>CSS efeito de sombra nos elementos</title>
 </head>
 <body>
-    
+    <!-- Título principal da página -->
+    <h1>Propriedade <code>box-shadow</code></h1> 
+
+    <!-- 
+      Primeiro container com uma imagem e três divs estilizadas.
+      Tudo isso ficará lado a lado (horizontal) graças ao Flexbox no CSS.
+    -->
+    <div class="container">
+
+        <!-- Exibe a imagem 'montanha3.jpg' -->
+        <img src="montanha3.jpg" alt="montanha3">
+
+        <!-- Div colorida com sombra, identificada por 'div-1' -->
+        <div id="div-1"></div>
+
+        <!-- Segunda div colorida com sombra, identificada por 'div-2' -->
+        <div id="div-2"></div>
+
+        <!-- Terceira div colorida com sombra, identificada por 'div-3' -->
+        <div id="div-3"></div>
+
+    </div>
+    <br><br>
+    <!-- 
+    Segundo container, que também usa Flexbox e possui três novas divs.
+    Cada uma pode ter um estilo ou sombra diferente.
+    -->
+    <div id="container-1" class="container">
+
+        <!-- Quarta div estilizada, identificada por 'div-4' -->
+        <div id="div-4"></div>
+
+        <!-- Quinta div estilizada, identificada por 'div-5' -->
+        <div id="div-5"></div>
+
+        <!-- Sexta div estilizada, identificada por 'div-6' -->
+        <div id="div-6"></div>
+
+    </div>
 </body>
 </html>

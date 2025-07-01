@@ -1,0 +1,12 @@
+.exemplo    {
+    background-color: rgb(241, 15, 185);
+    border: 5px solid orange;
+    color: white;
+    padding: 20px;
+    
+
+}
+
+.exemplo img    {
+    width: 30%;
+}

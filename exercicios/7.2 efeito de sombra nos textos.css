@@ -1,0 +1,33 @@
+h2  {
+    /* Define a cor do texto como azul-violeta */
+    color: blueviolet;
+
+    /* Define o tamanho da fonte para 40 pixels */
+    font-size: 40px;
+
+    /* Centraliza o texto horizontalmente */
+    text-align: center;
+
+    /* 
+        Aplica uma sombra ao texto.
+        text-shadow: deslocamento horizontal, deslocamento vertical, desfoque, cor
+        Neste caso: 10px para direita, 10px para baixo, 3px de desfoque, cor azul clara.
+    */
+    text-shadow: 10px 10px 3px rgb(25, 194, 240);
+
+    /* 
+        Adiciona uma sombra ao redor da caixa do elemento <h2>.
+        box-shadow: deslocamento horizontal, deslocamento vertical, desfoque, cor
+        Aqui: 10px para esquerda, 20px para baixo, 40px de desfoque, cor vermelha.
+    */
+    box-shadow: -10px 20px 40px red;
+
+    /* 
+        Aplica um filtro de drop-shadow ao elemento, o que pode oferecer um efeito de sombra extra sobre todo o elemento.
+        drop-shadow: deslocamento horizontal, deslocamento vertical, desfoque
+        (pode ser usada junto com uma cor opcional)
+        Aqui: 10px para esquerda, 10px para baixo, 10px de desfoque, cor padrão (preto semi-transparente)
+        Atenção: O filter: drop-shadow pode somar ou sobrescrever efeitos das sombras acima.
+    */
+    filter: drop-shadow(-10px 10px 10px);
+}

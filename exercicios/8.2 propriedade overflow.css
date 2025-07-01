@@ -1,0 +1,45 @@
+/* 
+  Classe .exemplo: 
+  Estiliza todos os blocos de exemplo padrão. 
+  Define o tamanho, borda, cor de fundo, e uma leve sombra. 
+*/
+.exemplo {
+    width: 200px;                       /* Largura fixa de 200px */
+    height: 200px;                      /* Altura fixa de 200px */
+    border: 5px solid orange;           /* Borda laranja grossa */
+    background-color: cornflowerblue;   /* Fundo azul claro */
+    object-fit: cover;                  /* (Efeito relevante só para imagens) */
+    filter: drop-shadow(10px 10px 5px); /* Sombra projetada */
+}
+
+/* 
+    ID #hidden: 
+    Aplica estilos ao bloco do exemplo "hidden". 
+    Mostra o comportamento do overflow (deveria ser hidden, mas está como scroll).
+    O conteúdo além do limite terá barras de rolagem (overflow: scroll). 
+*/
+#hidden {
+    width: 300px;                                /* Largura maior */
+    height: 200px;                               /* Altura padrão */
+    border: 5px solid rgb(255, 0, 200);          /* Borda rosa */
+    background-color: rgb(180, 237, 100);        /* Fundo verde claro */
+    object-fit: cover;
+    filter: drop-shadow(10px 10px 5px);
+    overflow: scroll;                            /* Sempre mostra barras de rolagem */
+}
+
+/* 
+    ID #auto: 
+    Aplica estilos ao bloco do exemplo "auto". 
+    Mostra o comportamento do overflow:auto.
+    Barras de rolagem aparecem apenas quando necessário.
+*/
+#auto   {
+    width: 250px;                               /* Largura intermediária */
+    height:250px;                               /* Altura maior */
+    border:  solid(24, 238, 52);                /* (Atenção: está faltando a espessura da borda, ex: '5px solid ...') */
+    background-color: blueviolet;               /* Fundo violeta */
+    object-fit: cover;
+    filter: drop-shadow(10px 10px 5px);
+    overflow: auto;                             /* Barras de rolagem só aparecem se precisar */
+}
