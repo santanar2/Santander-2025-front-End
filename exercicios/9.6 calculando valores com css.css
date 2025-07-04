@@ -1,0 +1,21 @@
+/* Aplica um espaçamento interno de 10px a todas as divs */
+div {
+    padding: 10px;
+}
+
+/* Estilo do elemento pai */
+.exemplo-01 { 
+    background-color: yellow;              /* Cor de fundo amarela */
+    width: 300px;                          /* Largura fixa de 300px */
+    box-sizing: border-box;               /* Inclui padding e borda dentro da largura total */
+}
+
+/* Estilo do elemento filho */
+.exemplo-02 {
+    box-sizing: border-box;               /* Inclui padding e borda dentro da largura total */
+    background-color: palevioletred;      /* Cor de fundo rosa claro */
+    
+    /* Calcula a largura do elemento como 100% da largura do pai, subtraindo 30px */
+    /* Isso pode ser útil para compensar margens, bordas ou padding adicionais */
+    width: calc(100% - 30px);
+}

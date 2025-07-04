@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linka o arquivo CSS externo com estilos para os exemplos -->
+    <link rel="stylesheet" href="9.5 viewports.css">
+    <title>CSS Viewports</title>
+</head> 
+<body>
+
+    <h1>Unidade de medida vw / vh / vmin / vmax</h1>
+
+    <!-- Exemplo com largura relativa a 50% do elemento pai -->
+    <div class="exemplo-01" style="width: 50%;">width: 50%;</div>
+
+    <!-- Exemplo com largura relativa a 50% da largura da viewport -->
+    <div class="exemplo-02" style="width: 50vw;">width: 50vw;</div>
+
+    <!-- Exemplo com largura relativa a 50% da altura da viewport -->
+    <div class="exemplo-03" style="width: 50vh;">width: 50vh;</div>
+
+    <br><hr><br>
+
+    <!-- Container com largura fixa de 300px -->
+    <div class="borda" style="width: 300px;">
+        <!-- Largura de 50% em relação à div "borda" (150px) -->
+        <div class="exemplo-01" style="width: 50%;">width: 50%;</div>
+
+        <!-- Ainda usa 50vw da viewport, não da div "borda" -->
+        <div class="exemplo-02" style="width: 50vw;">width: 50vw;</div>
+
+        <!-- Ainda usa 50vh da viewport -->
+        <div class="exemplo-03" style="width: 50vh;">width: 50vh;</div>
+    </div>
+
+    <br><hr><br>
+
+    <!-- Largura baseada na menor dimensão da viewport -->
+    <div class="exemplo-01" style="width: 10vmin;">width: 10vmin;</div>
+
+    <!-- Largura baseada na maior dimensão da viewport -->
+    <div class="exemplo-02" style="width: 10vmax;">width: 10vmax;</div> 
+
+</body>
+</html>
