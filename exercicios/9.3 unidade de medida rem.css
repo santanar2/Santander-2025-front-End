@@ -1,0 +1,34 @@
+/* Remove margens padrão de todos os parágrafos */
+p {
+    margin: 0;
+}
+
+/* Define o tamanho da fonte do parágrafo com ID p-2 para 32px */
+#p-2 {
+    font-size: 32px;
+}
+
+/* Define o tamanho da fonte do parágrafo com ID p-3 para 48px */
+#p-3 {
+    font-size: 48px;
+}
+
+/* Aplica padding (espaçamento interno) de 10px a todas as divs */
+div {
+    padding: 10px;
+}
+
+/* Define cor de fundo amarela para elementos com a classe .exemplo-01 */
+.exemplo-01 {
+    background-color: yellow;
+}
+
+/* Define cor de fundo rosa para elementos com a classe .exemplo-02 */
+.exemplo-02 {
+    background-color: palevioletred;
+}
+
+/* Define cor de fundo verde água para elementos com a classe .exemplo-03 */
+.exemplo-03 {
+    background-color: aquamarine;
+}

@@ -1,0 +1,75 @@
+<!-- Declaração do tipo de documento HTML5 -->
+<!DOCTYPE html>
+
+<!-- Início do documento HTML com idioma português do Brasil -->
+<html lang="pt-br">
+<head>
+    <!-- Define o conjunto de caracteres para UTF-8 -->
+    <meta charset="UTF-8">
+
+    <!-- Garante o layout responsivo em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importa um arquivo CSS externo com estilos adicionais -->
+    <link rel="stylesheet" href="9.3 unidade de medida rem.css">
+
+    <!-- Título da aba do navegador -->
+    <title>CSS unidade de medida rem</title>
+</head>
+<body>
+
+    <!-- Título principal da página -->
+    <h1>Unidade de medida rem</h1>
+
+    <!-- 
+        Parágrafos com diferentes tamanhos de fonte usando unidade rem. 
+        1rem = 16px (tamanho base do HTML)
+    -->
+    <p id="p-1" style="font-size: 1rem;">font-size: 1rem = 16px;</p>
+    <p id="p-2" style="font-size: 2rem;">font-size: 2rem = 32px;</p>
+    <p id="p-3" style="font-size: 3rem;">font-size: 3rem = 48px;</p>
+
+    <!-- Linha horizontal e quebra de linha para separação visual -->
+    <hr><br>
+
+    <!-- 
+        Exemplo do uso de rem em elementos aninhados.
+        Mesmo que o pai tenha font-size: 20px, o rem continua se baseando no root (html).
+    -->
+    <div class="exemplo-01" style="font-size: 20px;">font-size: 20px
+        <div class="exemplo-02" style="font-size: 2rem;">font-size: 2rem = 32px
+            <div class="exemplo-03" style="font-size: 2rem;">font-size: 2rem = 32px</div>
+        </div>
+    </div>
+
+    <!-- Espaço e nova seção com outra linha horizontal -->
+    <br><hr><br>
+
+    <!-- 
+        Exemplo do uso de em (herança do pai direto).
+        Aqui o tamanho da fonte se multiplica com base no elemento pai.
+        2em = 2 × tamanho do pai.
+    -->
+    <div class="exemplo-01" style="font-size: 20px;">font-size: 20px:
+        <br>
+        <div class="exemplo-02" style="font-size: 2em;">font-size: 2em = 40px;
+            <br>
+            <div class="exemplo-03" style="font-size: 2em;">font-size: 2em = 80px</div>
+        </div>
+    </div>
+
+    <!-- Espaço e separação visual -->
+    <br><hr><br>
+
+    <!-- 
+        Demonstração de uso da unidade rem na largura (width).
+        10rem = 10 × 16px (tamanho base) = 160px
+    -->
+    <div class="exemplo-02" style="font-size:30px; width: 10rem;">
+        font-size: 30px
+        <br>
+        width: 10rem = 160px (se root = 16px)
+    </div>
+
+</body>
+</html>

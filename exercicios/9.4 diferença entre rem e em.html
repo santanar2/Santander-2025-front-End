@@ -1,0 +1,68 @@
+<!-- Declaração do tipo de documento HTML5 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Define a codificação de caracteres -->
+    <meta charset="UTF-8">
+    
+    <!-- Torna o site responsivo para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Importa o arquivo CSS externo que contém os estilos -->
+    <link rel="stylesheet" href="9.4 diferença entre rem e em.css">
+    
+    <!-- Título da aba do navegador -->
+    <title>CSS diferença entre rem e em</title>
+</head>
+
+<body>
+
+    <!-- Título principal da página -->
+    <h1>Unidade de media em x rem</h1> 
+
+    <!-- Exemplo de uso de rem: baseado no tamanho da fonte raiz (geralmente <html>) -->
+    <p style="font-size: 2rem">font-size: 2rem;</p>
+
+    <!-- Exemplo de uso de em: baseado no tamanho da fonte do elemento pai -->
+    <p style="font-size: 2em;">font-size: 2em;</p>
+
+    <!-- Exemplo de uso de porcentagem: também relativo ao tamanho da fonte do elemento pai -->
+    <p style="font-size: 200%;">font-size: 200%;</p> 
+
+    <br><hr><br>
+
+    <!-- Exemplo aninhado para comparar rem, em e % em contexto de herança -->
+
+    <!-- Nível 1 - define font-size: 2rem, relativo à raiz -->
+    <div class="exemplo-01" style="font-size: 2rem;">font-size: 2rem;
+        
+        <!-- Nível 2 - define font-size: 2em, ou seja, 2x o tamanho herdado do div pai -->
+        <div class="exemplo-02" style="font-size: 2em;">font-size: 2em;
+            
+            <!-- Nível 3 - define font-size: 200%, ou seja, 2x o tamanho herdado do div acima -->
+            <div class="exemplo-03" style="font-size: 200%;">font-size: 200%;
+            </div>
+        </div>
+    </div>
+
+    <br><hr><br>  
+
+    <!-- Novo exemplo com múltiplos elementos dentro de um mesmo bloco -->
+
+    <!-- Div principal com font-size: 2rem -->
+    <div class="exemplo-01" style="font-size: 2rem;">font-size: 2rem;
+        
+        <!-- Filho com font-size: 2em (2x o 2rem do pai = 4rem) -->
+        <div class="exemplo-02" style="font-size: 2em;">font-size: 2em;</div> 
+        
+        <!-- Filho com font-size: 200% (também será 4rem) -->
+        <div class="exemplo-03" style="font-size: 200%;">font-size:200%;</div>
+        
+        <!-- Filho com font-size: 2rem (independente do pai, pois é baseado na raiz) -->
+        <div class="exemplo-02" style="font-size: 2rem;">font-size: 2rem;</div>
+        
+    </div>
+
+</body>
+</html>

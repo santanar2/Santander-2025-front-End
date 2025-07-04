@@ -1,0 +1,60 @@
+<!-- Declaração do tipo de documento HTML5 -->
+<!DOCTYPE html>
+
+<!-- Início do documento HTML com idioma português do Brasil -->
+<html lang="pt-br">
+<head>
+    <!-- Define o conjunto de caracteres para UTF-8 -->
+    <meta charset="UTF-8">
+
+    <!-- Torna o layout responsivo em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importa o arquivo CSS externo com unidades de medida rem -->
+    <link rel="stylesheet" href="9.2 unidade de media rem.css">
+
+    <!-- Título da aba do navegador -->
+    <title>CSS unidade de medida rem</title>
+</head> 
+<body>
+
+    <!-- Título principal da página -->
+    <h1>Unidade de media em</h1>   
+
+    <!-- Parágrafos demonstrando o uso da unidade "em" para font-size -->
+    <!-- 1em equivale ao tamanho da fonte do elemento pai (normalmente 16px) -->
+    <p id="p-1" font-size: 1em>font-size: 1em = 16px;</p>
+    <p id="p-2" font-size: 2em>font-size: 2em = 32px;</p> 
+    <p id="p-3" font-size: 3em>font-size: 3em = 48px;</p>  
+
+    <!-- Linha horizontal e quebra de linha para separar seções -->
+    <hr><br>
+
+    <!-- Exemplo de herança e multiplicação de "em" em elementos aninhados -->
+    <!-- Exemplo-01: define font-size de 20px -->
+    <div class="exemplo-01" style="font-size: 20px;">font-size: 20px
+
+        <!-- Exemplo-02: 2em = 40px, pois 2 x 20px -->
+        <div class="exemplo-02" style="font-size: 2em">font-size: 2em = 40px
+
+            <!-- Exemplo-03: 2em = 80px, pois 2 x 40px -->
+            <div class="exemplo-03" style="font-size: 2em">font-size: 2em = 80px
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Espaçamento visual com quebra de linha e linha horizontal -->
+    <br><hr><br>
+
+    <!-- Demonstração de largura com unidade "em" baseada no font-size -->
+    <!-- font-size: 30px; width: 10em = 10 x 30px = 300px -->
+    <div class="exemplo-02" style="font-size:30px; width: 10em;">
+        font-size: 30px
+        <br>
+        width: 10em = 300px
+    </div>
+    
+</body>  
+</html>
