@@ -7,7 +7,7 @@ Este repositório contém exemplos e exercícios práticos sobre **HTML** e **CS
 ## 📁 Estrutura de Pastas e Arquivos
 
 ### 1. `2 Seletores/`
-Exemplos de seletores CSS, combinadores, propriedades de box model (margin, padding, box-sizing) e agrupamento de seletores.
+Exemplos de seletores CSS, combinadores, propriedades do box model (margin, padding, box-sizing) e agrupamento de seletores.
 
 - `1 index.html`  
   Introdução aos principais seletores CSS: tag, id, classe, universal e de atributo.
@@ -44,7 +44,6 @@ Exemplos de seletores CSS, combinadores, propriedades de box model (margin, padd
 - `4.4 box sizing.html`  
   Demonstração das diferenças entre `box-sizing: border-box` e `content-box`.
 
-  
 ---
 
 ### 2. `3 explorando os fundamentos do CSS/`
@@ -96,38 +95,6 @@ Exercícios e exemplos sobre propriedades de cor, gradientes, imagens de fundo, 
   CSS para `background-attachment`.
 - `Formas de declaração do CSS/`  
   Exemplos de diferentes formas de declarar CSS (inline, interno, externo).
-  - `4 largura e altura.html`  
-  Demonstração das propriedades `width` e `height` em CSS.
-- `4.1 altura largura maximo minimo.html`  
-  Uso de `max-width`, `min-width`, `max-height`, `min-height`.
-- `4.2 margin.html`  
-  Exemplos de espaçamento externo (margin) em diferentes lados.
-- `4.2.1 margin.html`  
-  Demonstração de margens com múltiplos valores.
-- `4.2.2 margin.html`  
-  Uso de `margin: auto` para centralização.
-- `4.3 padding.html`  
-  Exemplos de espaçamento interno (padding).
-- `4.4 box sizing.html`  
-  Demonstração das diferenças entre `box-sizing: border-box` e `content-box`.
-- `4.5 arredondando cantos com propriedade border radius/`
-Exercícios práticos sobre bordas e arredondamento de cantos com `border-radius`.
-- `index.html`  
-  Explicação prática da aplicação de imagens como bordas nos elementos HTML.
-- `4.6-propriedade-border-image-source.css`  
-  Estilização com diferentes formatos de `border-image-source`.
-- `4.7 propriedade border image slice/`
-Exemplos avançados de personalização de bordas com a propriedade `border-image-slice`.
-- `4.8 propriedade border image width/`
-Exercícios focados na propriedade `border-image-width`, que define a espessura da imagem usada como borda.
-- `4.9 propriedade border image repeat/`
-Exercícios com a propriedade `border-image-repeat`, que define como a imagem é repetida ao longo da borda.
-- `5.0 propriedade border image outset/`
-Exercícios sobre a propriedade `border-image-outset`, que define a distância da imagem da borda em relação à borda real do elemento.
-- `5.0.1 propriedade border image outset p2/`
-Continuação dos exercícios com a propriedade `border-image-outset`, aprofundando no controle do afastamento da imagem da borda.
-
-
 
 ---
 
@@ -136,7 +103,15 @@ Pasta reservada para exemplos de estilização básica com CSS.
 
 ---
 
-### 4. `trilha-html-modulo-3-main/`
+### 4. `exercicios/`
+Exercícios práticos de HTML e CSS.
+
+- `9.4 diferença entre rem e em.css`  
+  Demonstra a diferença entre as unidades `rem` e `em` no CSS, além de exemplos de uso de `padding`, `background-color` e tamanhos de fonte em diferentes seletores.
+
+---
+
+### 5. `trilha-html-modulo-3-main/`
 Projeto principal de reestilização da Wikipedia, focando em semântica, acessibilidade e layout.
 
 - `index.html`  
@@ -158,5 +133,4 @@ Projeto principal de reestilização da Wikipedia, focando em semântica, acessi
 
 ## 👨‍🏫 Créditos
 
-Material de estudo baseado em exercícios e desafios da [Digital Innovation One (DIO)](https://www.dio.me/) e adaptações para fins
-
+Material de estudo baseado em exercícios e desafios da [Digital Innovation One (DIO)](https://www.dio.me/) e adaptações para fins didáticos.
