@@ -1,0 +1,29 @@
+/* Define o estilo do elemento com ID 'exemplo-pixel':
+   - Tamanho da fonte fixo em 30px
+   - Cor de fundo azul-claro
+   - Largura fixa de 300px */
+#exemplo-pixel {
+    font-size: 30px;
+    background-color: lightblue;
+    width: 300px;
+}
+
+/* Define o estilo do elemento com ID 'exemplo-porcentagem':
+   - Tamanho da fonte fixo em 30px
+   - Cor de fundo rosa-claro
+   - Largura relativa: 50% da largura do elemento pai */
+#exemplo-porcentagem {
+    font-size: 30px;
+    background-color: lightpink;
+    width: 50%;
+}
+
+/* Define o estilo do elemento com ID 'elemento-pai':
+   - Largura fixa de 500px
+   - Tamanho da fonte em 40px (pode afetar filhos se usarem valores relativos como "em")
+   - Borda preta de 5px de espessura */
+#elemento-pai {
+    width: 500px;
+    font-size: 40px;
+    border: 5px solid black;
+}

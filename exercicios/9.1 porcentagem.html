@@ -1,0 +1,61 @@
+<!-- Declaração do tipo de documento HTML5 -->
+<!DOCTYPE html>
+
+<!-- Início do documento HTML, com idioma definido como português do Brasil -->
+<html lang="pt-br">
+<head>
+    <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta charset="UTF-8">
+    
+    <!-- Configura a visualização para dispositivos móveis, permitindo layout responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Importa uma folha de estilo externa chamada "9.1 porcentagem.css" -->
+    <link rel="stylesheet" href="9.1 porcentagem.css">
+    
+    <!-- Define o título da aba no navegador -->
+    <title>CSS porcentagem</title>
+</head>
+<body>
+
+    <!-- Título principal da página -->
+    <h1>porcentagem</h1>
+
+    <!-- Parágrafo explicativo -->
+    <p>Pixel vs Porcentagem</p>
+
+    <!-- Exemplo de elemento com largura fixa (300px) -->
+    <div id="exemplo-pixel">
+        width: 300px;
+    </div>
+    
+    <!-- Exemplo de elemento com largura relativa (50% do elemento pai) -->
+    <div id="exemplo-porcentagem">
+        width: 50%;
+    </div>
+
+    <!-- Espaçamento e linha horizontal para separação visual -->
+    <br><hr>
+
+    <!-- Bloco explicativo sobre o comportamento de elementos filhos com base no tamanho do elemento pai -->
+    <div>
+        <p>Elemento pai possui 500px de largura e um font-size de 40px. </p>
+
+        <!-- Elemento pai com largura de 500px e font-size de 40px (configurado via CSS externo) -->
+        <div id="elemento-pai">
+            
+            <!-- Filho com largura fixa de 300px -->
+            <div id="exemplo-pixel">
+                width: 300px;
+            </div>
+            
+            <!-- Filho com largura de 50% e fonte definida como 50% do pai -->
+            <div id="exemplo-porcentagem" style="font-size: 50%;">
+                width: 50%
+            </div>
+
+        </div>
+    </div>    
+
+</body>
+</html>
