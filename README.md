@@ -1,7 +1,3 @@
-Claro! Segue uma versão padronizada, clara e organizada para o seu README, mantendo o formato dos títulos e descrições, para facilitar leitura e navegação:
-
----
-
 # Exercícios e Exemplos CSS - Fundamentos e Propriedades
 
 ## 2. Explorar os fundamentos do CSS  
@@ -216,5 +212,10 @@ Exercícios e exemplos sobre propriedades de cor, gradientes, imagens de fundo, 
 - **9.4 diferença entre rem e em.html** e **9.4 diferença entre rem e em.css**  
   Comparação de `rem`, `em` e porcentagem em elementos aninhados.
 
----
+## 10. Layouts Flexíveis
 
+- **10.1 layouts flexiveis multicolunas.html** e **10.1 layouts flexiveis multicolunas.css**  
+  Implementação de um layout com múltiplas colunas utilizando as propriedades `column-count` e `column-gap`.
+
+- **10.2 layouts flexiveis flexbox.html** e **10.2 layouts flexiveis flexbox.css**  
+  Exemplo prático de layout responsivo com Flexbox, incluindo distribuição de "cards" de texto e galeria de imagens com `display: flex`.
