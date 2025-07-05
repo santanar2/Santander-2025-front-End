@@ -1,0 +1,67 @@
+/* Define espaçamento básico e fonte para todo o site */
+body {
+    margin: 1; 
+    font-family: arial, sans-serif;
+}
+
+/* Estiliza o cabeçalho: cor de fundo, espaçamento interno e centralização */
+header {
+    background-color: lightblue;
+    padding: 60px;
+    text-align: center;
+}
+
+/* Define o tamanho e peso da fonte dos títulos do cabeçalho */
+header h2 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Define o espaçamento, largura máxima e centralização do conteúdo principal */
+main  {
+    padding: 30px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Transforma títulos <h3> para caixa alta */
+h3  {
+    text-transform: uppercase;
+}
+
+/* Cria um layout flexível para detalhes, com espaçamento entre elementos */
+.details {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* Estiliza um cartão: cor de fundo, borda arredondada e (atenção: valor incorreto em 'padding') */
+.card {
+    background-color: lightblue;
+    padding: flex; /* Valor incorreto, deveria ser um número ou unidade (ex: 20px) */
+    border-radius: 4px;
+}
+
+/* Estiliza o cartão de imagem: cor de fundo, borda, espaçamento e largura flexível mínima */
+.image-card  {
+    background-color: lightblue;
+    border: 1px solid #e2e2e2;
+    padding: 10px;
+    flex-basis: 200px;
+}
+
+/* Garante que a imagem preencha todo o cartão de imagem */
+.image-card img {
+    width: 100%;
+}
+
+/* Estiliza a galeria para exibir imagens lado a lado e com espaçamento */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}

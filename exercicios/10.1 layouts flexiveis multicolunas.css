@@ -1,0 +1,16 @@
+/* Define a fonte padrão do corpo da página como Arial */
+body {
+    font-family: arial;
+}
+
+/* Estiliza o container que contém o texto em múltiplas colunas */
+.container {
+    /* Define a largura ideal de cada coluna como 200px */
+    column-width: 200px;
+
+    /* Adiciona uma linha divisória de 1px, cor vermelha, entre as colunas */
+    column-rule: 1px solid #ea0f0f;
+
+    /* Define o espaçamento entre as colunas como 100px */
+    column-gap: 100px;
+}
