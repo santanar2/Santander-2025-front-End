@@ -219,3 +219,17 @@ Exercícios e exemplos sobre propriedades de cor, gradientes, imagens de fundo, 
 
 - **10.2 layouts flexiveis flexbox.html** e **10.2 layouts flexiveis flexbox.css**  
   Exemplo prático de layout responsivo com Flexbox, incluindo distribuição de "cards" de texto e galeria de imagens com `display: flex`.
+
+  - **10.3 layouts flexiveis grid.html** e **10.3 layouts flexiveis grid.css**  
+  Implementação de um layout complexo utilizando CSS Grid, organizando o conteúdo em áreas como header, navegação, seções principais, conteúdos adicionais e rodapé de forma responsiva e moderna.
+
+  - **10.4 meta tag viewport.html**  
+  Exemplo prático do uso da meta tag `viewport` no `<head>`, garantindo que o layout seja adaptado corretamente em telas de dispositivos móveis (celulares e tablets).  
+  O arquivo HTML apresenta instruções para visualização em dispositivos móveis, inclui uma imagem ilustrativa e um texto de preenchimento. Demonstra a importância do ajuste de escala e largura da página via `<meta name="viewport" content="width=device-width, initial-scale=1.0">`.
+
+- **10.5 media types print.html**  
+  Exemplo prático de uso de *media types* em CSS com `@media print`.  
+  O arquivo HTML traz um teste de impressão no qual, ao enviar a página para impressão, o fundo é alterado para preto e o texto para branco, demonstrando como adaptar a aparência do conteúdo especificamente para impressoras.  
+  Inclui imagem ilustrativa e texto explicativo, incentivando a testar em diferentes dispositivos e a usar o recurso de "print preview" do navegador.
+
+  
