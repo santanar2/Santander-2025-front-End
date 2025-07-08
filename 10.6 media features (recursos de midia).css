@@ -1,0 +1,98 @@
+/* Define espaçamento básico e fonte para todo o site */
+body {
+    margin: 1; 
+    font-family: arial, sans-serif;
+}
+
+/* Estiliza o cabeçalho com cor de fundo, espaçamento interno e alinhamento central */
+header {
+    background-color: lightblue;
+    padding: 60px;
+    text-align: center;
+}
+
+/* Define o estilo do subtítulo dentro do cabeçalho: tamanho e peso da fonte */
+header h2 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Estiliza a área principal do conteúdo: espaçamento interno, centralização e largura máxima */
+main {
+    padding: 30px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Transforma os títulos <h3> para letras maiúsculas */
+h3 {
+    text-transform: uppercase;
+}
+
+/* Cria layout horizontal flexível com espaçamento entre os elementos */
+.details {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* Estiliza um cartão genérico com cor de fundo e borda arredondada */
+/* Atenção: valor de padding está incorreto ('flex') e deve ser ajustado */
+.card {
+    background-color: lightblue;
+    padding: flex; /* ⚠️ ERRO: 'flex' não é um valor válido para padding (use, por exemplo, 20px) */
+    border-radius: 4px;
+}
+
+/* Estiliza o cartão de imagem com fundo, borda, espaçamento interno e largura mínima */
+.image-card {
+    background-color: lightblue;
+    border: 1px solid #e2e2e2;
+    padding: 10px;
+    flex-basis: 200px;
+}
+
+/* Garante que a imagem ocupe toda a largura do cartão */
+.image-card img {
+    width: 100%;
+}
+
+/* Estiliza a galeria de imagens com layout flexível, espaçamento e alinhamento central */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+/* Estilos aplicados quando a tela tem largura de até 690px */
+@media screen and (max-width: 690px) {
+    /* Muda a cor de fundo e a cor do texto dos cartões */
+    .card {
+        color: lightblue;
+        background-color: black;
+    }
+
+    /* Reduz a largura mínima dos cartões de imagem */
+    .image-card {
+        flex-basis: 100px;
+    }
+}
+
+/* Estilos aplicados quando a orientação da tela for retrato */
+@media screen and (orientation: portrait) {
+    /* Muda a cor de fundo do cabeçalho e dos cartões */
+    header, .card {
+        background-color: lightgreen;
+    }
+
+    /* Estilos adicionais para dispositivos com entrada por toque (como celulares e tablets) */
+    @media screen and (pointer: coarse) {
+        /* Muda a cor do texto do cabeçalho e dos cartões */
+        header, .card {
+            color: lightcoral;
+        }
+    }
+}
