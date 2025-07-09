@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Imagens prespnsivas</title>
+    <style>
+        /* 
+        Define uma borda vermelha ao redor do contêiner da imagem.
+        Usado apenas para visualização do contorno.
+        */
+        .imagem-container {
+            border: 2px solid red;
+        }
+        /* 
+        Torna todas as imagens responsivas, ou seja, 
+        faz com que a imagem nunca ultrapasse o tamanho do elemento pai 
+        e se ajuste proporcionalmente à largura disponível.
+        */
+        img {
+            max-width: 100%;
+        }
+    </style>
+    <!-- 
+    Inclui uma folha de estilos CSS externa (não exibida aqui). 
+    Provavelmente reforça ou complementa os estilos de imagens responsivas do exemplo.
+    -->
+    <link rel="stylesheet" href="10.9 imagens responsivas.css">
+</head>
+
+<body>
+    <!-- 
+    Instrução ao usuário para abrir as ferramentas do desenvolvedor. 
+    Não influencia na funcionalidade, apenas informativo.
+    -->
+    <p><b>Todo understand this example, you should open the developer tools</b></p>
+
+    <!-- 
+    Demonstração de imagem responsiva dentro de um container com borda vermelha.
+    O CSS faz com que a imagem se ajuste à largura do container mantendo suas proporções.
+    -->
+    <div class="imagem-container">
+        <img src="montanha3.jpg" alt="montanha3">
+    </div>   
+    
+    <!-- 
+    Utilização do elemento <picture> para imagens responsivas:
+    - <source> permite definir diferentes imagens para diferentes tamanhos de tela.
+    - O atributo media define a condição de exibição do arquivo informado em srcset.
+    - O navegador seleciona o arquivo mais adequado conforme o tamanho da tela.
+    - Se nenhuma condição for atendida, a tag <img> é usada como fallback.
+
+    Obs: Há erros de digitação nos nomes dos arquivos e no atributo media.
+    Exemplo correto: media="(max-width: 680px)"
+    -->
+    <picture>
+        <source srcset="exercicios/montanhas.jpg" media="max-width: 680px"> 
+        <source srcset="montnha2.jpg"> 
+        <img src="motnha2.jpg" alt="motnha2">
+    </picture>
+
+    <!-- 
+    Parágrafo fictício (Lorem ipsum) usado como preenchimento de conteúdo.
+    Apenas para ilustrar o comportamento das imagens ao lado de texto.
+    -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tenetur recusandae quae dolores excepturi dignissimos ducimus neque, impedit qui incidunt cupiditate. Amet, facere doloremque eveniet obcaecati consequuntur recusandae dolore hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cupiditate fuga nostrum, maiores fugiat officiis facilis maxime totam non molestias itaque vero iste rem recusandae voluptatibus impedit repellendus minus beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta delectus fugiat beatae voluptates, fuga doloribus soluta cupiditate non eius voluptate asperiores et maiores a animi natus. Aperiam, dolore tenetur.
+    </p>
+</body>
+</html>

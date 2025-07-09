@@ -232,4 +232,20 @@ Exercícios e exemplos sobre propriedades de cor, gradientes, imagens de fundo, 
   O arquivo HTML traz um teste de impressão no qual, ao enviar a página para impressão, o fundo é alterado para preto e o texto para branco, demonstrando como adaptar a aparência do conteúdo especificamente para impressoras.  
   Inclui imagem ilustrativa e texto explicativo, incentivando a testar em diferentes dispositivos e a usar o recurso de "print preview" do navegador.
 
-  
+  - **10.6 media queries básicas.html** e **10.6 media queries básicas.css**  
+  Introdução ao uso de media queries em CSS para adaptar estilos conforme a largura da tela. Exemplos práticos de alteração de cores, tamanhos e espaçamentos para diferentes resoluções (desktop, tablet e celular).
+
+- **10.7 media queries avançadas.html** e **10.7 media queries avançadas.css**  
+  Demonstração de media queries combinadas e avançadas, utilizando múltiplas condições (`and`, `or`, `not`) para criar regras específicas para diferentes dispositivos, orientações de tela e características do ambiente.
+
+- **10.8 layout responsivo com media queries.html** e **10.8 layout responsivo com media queries.css**  
+  Exemplo prático de como tornar um layout totalmente responsivo utilizando media queries. Mostra a reorganização de grids, menus e elementos de acordo com o tamanho da tela, garantindo boa experiência em qualquer dispositivo.
+
+- **10.9 menu responsivo com media queries.html** e **10.9 menu responsivo com media queries.css**  
+  Implementação de um menu de navegação que muda de horizontal para vertical em telas menores, utilizando media queries para esconder ou mostrar itens conforme o espaço disponível.
+
+- **10.10 grid responsivo com media queries.html** e **10.10 grid responsivo com media queries.css**  
+  Demonstração de um grid de cards ou imagens que se adapta automaticamente ao tamanho da tela, alterando o número de colunas e o espaçamento entre os itens para diferentes dispositivos.
+
+- **10.11 flexbox responsivo com media queries.html** e **10.11 flexbox responsivo com media queries.css**  
+  Exemplo de layout flexível usando Flexbox combinado com media queries para ajustar direção, alinhamento e espaçamento dos elementos, garantindo responsividade e boa apresentação em qualquer
