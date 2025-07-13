@@ -1,0 +1,201 @@
+/* Usar Flexbox no body para empurrar o rodapé para o fim */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* altura mínima igual à altura da tela */
+    background-color: rgb(12, 12, 12);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Elemento <main> ocupa o espaço flexível */
+main {
+    flex: 1;
+}
+
+
+.banner  {
+    background-image: url(assets/images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-color: rgb(8, 22, 42);
+    
+}
+
+h1 {
+    color: #3b82f6; /* azul claro */
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+
+h2 {
+    color: #3b82f6;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+}
+
+p {
+    color: #ccc;
+        max-width: 700px;
+        margin: 0 auto 30px auto;
+        font-size: 16px;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10px 10px 10px;
+    color:blue;
+    
+}
+
+#course-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid blue;
+    
+}
+
+.module {
+        background-color: #1a1a1a;
+        border: 1px solid #3b82f6;
+        border-radius: 30px;
+        padding: 15px 30px;
+        margin: 10px auto;
+        width: fit-content;
+        max-width: 80%;
+        color: #ccc;
+        font-size: 16px;
+        transition: background 0.3s, transform 0.3s;
+    }
+
+    .module span {
+        color: #3b82f6;
+        font-weight: bold;
+    }
+
+
+    .module:hover span {
+        color: white;
+    }
+
+#transform-world {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+
+}
+
+#transform-world  {
+    color: blue;
+}
+
+#transform-world,p {
+    color: rgb(236, 236, 238);
+}
+
+#transform-world {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    background-image: url('assets/images/woman-code.png'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 5%;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* escurece a imagem para melhor contraste com o texto */
+}
+
+.texto {
+    position: relative;
+    z-index: 1;
+}
+
+#profissional-world {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    color: blue;
+    
+}
+
+
+
+#profissional-challenges, h2,i{
+    text-align: center;
+    padding: 60px;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+}
+#profissional-challenges img {
+    width: 400px;  /* ou o tamanho desejado */
+    height: auto;
+    display: inline-block;
+}
+
+
+
+
+
+/* Remove o rodapé fixo para que ele role com a página */
+footer {
+    position: static; /* ou apenas remova 'position' completamente */
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: transparent; /* opcional */
+    border: 1px solid blue;
+}
+
+/* Estilo apenas para o texto dentro do footer */
+footer p {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap; /* deixa em uma linha só */
+    overflow: hidden; /* evita que o texto ultrapasse */
+    text-overflow: ellipsis; /* adiciona "..." se for muito longo */
+}
