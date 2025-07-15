@@ -250,6 +250,8 @@ Exercícios e exemplos sobre propriedades de cor, gradientes, imagens de fundo, 
 - **10.11 flexbox responsivo com media queries.html** e **10.11 flexbox responsivo com media queries.css**  
   Exemplo de layout flexível usando Flexbox combinado com media queries para ajustar direção, alinhamento e espaçamento dos elementos, garantindo responsividade e boa apresentação em qualquer
 
+  ## 11 Display
+
   - **11.1 display block.html** e **11.1 display block.css**  
   Demonstração do comportamento padrão do `display: block` em elementos HTML, ocupando toda a largura disponível e iniciando em uma nova linha.
 
