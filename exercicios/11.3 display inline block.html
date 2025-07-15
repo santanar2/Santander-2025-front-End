@@ -1,0 +1,127 @@
+<!-- Define o tipo do documento como HTML5 e o idioma principal como português brasileiro -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 para suportar acentuação -->
+    <meta charset="UTF-8">
+    <!-- Deixa a página responsiva em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da aba do navegador -->
+    <title>CSS Display Inline Block</title>
+
+    <!-- Bloco de estilo CSS -->
+    <style>
+        /* Fonte da página como Roboto, se disponível, senão sans-serif */
+        body {
+            font-family: Roboto, sans-serif;
+        }
+
+        /* Elementos com a classe 'exemplo' terão fundo rosa claro */
+        .exemplo {
+            background-color: palevioletred;
+        }
+
+        /* Elementos com ambas as classes 'inline-block' e 'exemplo'
+           terão display: inline-block, largura fixa, margem e padding */
+        .inline-block {
+            display: inline-block;
+            width: 200px;
+            margin: 8px;
+            padding: 30px;
+        }
+
+        /* Estilos para o menu principal */
+        .menu {
+            background-color: aqua;
+            text-align: center; /* Centraliza os itens do menu */
+            padding: 0;
+            margin: 0;
+        }
+        /* Cada item da lista <li> do menu fica em linha e recebe espaçamento interno */
+        .menu li {
+            display: inline-block;
+            padding: 20px 40px;
+        }
+        /* Remove os marcadores da lista do menu */
+        .menu {
+            list-style: none;
+        }
+
+        /* Remove sublinhado dos links e define a cor como preta */
+        .menu li a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho principal da página -->
+    <h1>Propriedade Display</h1>
+    <!-- Breve explicação sobre a propriedade display no CSS -->
+    <p>A propriedade display vai determinar como essas caixinhas retangulares irão se comportar na hora de serem exibidas na tela.</p>
+
+    <!-- Lista de propriedades CSS relacionadas às bordas -->
+    <ul>
+        <li>border-width</li> 
+        <li>border-style</li> 
+        <li>border-color</li>
+    </ul>
+
+    <!-- Título da seção de exemplos -->
+    <h2>Exemplo:</h2>  
+
+    <!-- Demonstração visual do display: block -->
+    <code>display: block;</code> 
+    <br><br>
+    <!-- Dois elementos div de bloco, cada um aparece em uma linha nova ocupando 100% do espaço -->
+    <div class="exemplo">Exemplo Bloco 01</div> 
+    <div class="exemplo">Exemplo Bloco 02</div>
+
+    <br><br>
+    <!-- Demonstração visual do display: inline-block -->
+    <code>display: inline-block;</code>
+    <br><br>
+
+    <!-- Vários exemplos de elementos (span, em e b) com .exemplo e .inline-block,
+         que aparecem um ao lado do outro, mas podem ter largura, altura, margem e padding como um bloco -->
+    <span class="exemplo inline-block">Exemplo Inline 01</span>
+    <span class="exemplo inline-block">Exemplo Inline 02</span>
+    <em class="exemplo inline-block">Exemplo Inline 03  sdkfwoe  </em>
+    <span class="exemplo inline-block">Exemplo Inline 04</span>
+    <span class="exemplo inline-block">Exemplo Inline 05</span>
+    <em class="exemplo inline-block">Exemplo Inline 06  sdkfwoe  </em>
+    <span class="exemplo inline-block">Exemplo Inline 07</span>
+    <span class="exemplo inline-block">Exemplo Inline 08</span>
+    <em class="exemplo inline-block">Exemplo Inline 09  sdkfwoe  </em>
+    <span class="exemplo inline-block">Exemplo Inline 10</span>
+    <span class="exemplo inline-block">Exemplo Inline 11</span>
+    <em class="exemplo inline-block">Exemplo Inline 12  sdkfwoe  </em>
+
+    <b class="exemplo inline-block">Exemplo Inline 04 </b>
+
+    <br><br>
+    <!-- Exemplo de elemento inline-block dentro de um parágrafo, ocupando o fluxo do texto,
+         mas respeitando largura, altura e margem definidas -->
+    <p>Lorem ipsum <b class="inline-block exemplo"> dolor sit amet,</b> consectetur adipisicing elit. Magnam beatae dolores ratione perspiciatis mollitia cum, nemo fuga. Ex obcaecati ab velit amet libero dignissimos et cupiditate deleniti sequi! Illo, sed!</p>
+
+    <br><br><br>
+    <!-- Exemplo de menu de navegação horizontal usando display: inline-block em <li> -->
+    <h3>MENU DE NAV</h3>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#"> meu link 01 </a></li>
+            <li><a href="#"> meu link 02 </a></li>
+            <li><a href="#"> meu link 03 </a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+<!--
+✅ O que esse exemplo demonstra na prática:
+display: block → cada elemento ocupa toda a largura (quebra linha).
+display: inline-block → permite ficar lado a lado, mas com largura, altura, margem e padding, como blocos.
+<ul class="menu"> mostra um menu horizontal com itens alinhados lado a lado usando inline-block.
+Se quiser, posso criar uma comparação visual entre os três tipos (block, inline, inline-block) com bordas diferentes. Deseja isso também?
+-->

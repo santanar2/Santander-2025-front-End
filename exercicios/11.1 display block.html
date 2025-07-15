@@ -1,0 +1,58 @@
+<!-- Define o tipo do documento como HTML5 e o idioma da página como português do Brasil -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Garante que a página seja responsiva em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título mostrado na aba do navegador -->
+    <title>CSS Display Block</title> 
+</head>
+
+<style>
+/* Tenta aplicar a fonte Roboto em toda tag <text> (mas observe: <text> não é uma tag HTML válida) */
+text {
+    font-family: Roboto, sans-serif;
+}
+
+/* Define cor de fundo rosa para todos elementos que possuírem a classe "Exemplo" */
+.Exemplo {
+    background-color: palevioletred;
+}
+</style>
+
+<body>
+    <!-- Cabeçalho principal da página -->
+    <h1>Propriedade Display</h1>
+    <!-- Parágrafo explicando a utilidade da propriedade display no CSS -->
+    <p>A propriedade display vai determinar como essas caixinhas retangulares irão se comportar na hora de serem exibidas na tela.</p>
+
+    <!-- Lista não ordenada apresentando propriedades relacionadas a bordas -->
+    <ul>
+        <li>border-width</li> 
+        <li>border-style</li> 
+        <li>border-color</li>
+    </ul>
+
+    <!-- Subtítulo para os exemplos seguintes -->
+    <h2>Exemplo:</h2>  
+
+    <!-- Mostra no formato de código o valor "display: block;" -->
+    <code>display: block;</code> 
+
+    <!-- Espaço em branco para separar visualmente os elementos -->
+    <br><br>
+    
+    <!-- Div (elemento de bloco), ocupa toda a largura, recebe a cor de fundo da classe Exemplo -->
+    <div class="Exemplo">Exemplo 01</div> 
+    
+    <!-- Parágrafo (outro elemento de bloco), também recebe a cor de fundo definida pela classe -->
+    <p class="Exemplo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem rem, delectus dignissimos ab molestiae voluptate dolor fugiat ea odio id. Beatae illum possimus tempore ratione unde nam laboriosam ullam voluptate.</p>
+
+    <!-- Span (elemento inline), também recebe a cor de fundo mas mantém comportamento inline -->
+    <span class="Exemplo">Exemplo 03</span> 
+    
+</body>
+</html>

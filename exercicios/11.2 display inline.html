@@ -1,0 +1,85 @@
+<!-- Define que este documento usa HTML5 e o idioma principal é português brasileiro -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Permite que a página seja responsiva em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da aba do navegador -->
+    <title>CSS Display Inline</title> 
+</head>
+
+<!-- Início do CSS da página -->
+<style>
+/* (Inútil neste contexto: <text> não é uma tag HTML válida)
+   Caso existisse, aplicaria a fonte Roboto */
+text {
+    font-family: Roboto, sans-serif;
+}
+
+/* Aplica cor de fundo a qualquer elemento que tenha a classe Exemplo */
+.Exemplo {
+    background-color: palevioletred;
+}
+
+/* Aplica cor de texto antiquewhite e tenta largura 300px aos elementos com classe inline.
+   Observação: elementos 'inline' não respeitam 'width' e 'height' */
+.inline {
+    color: antiquewhite;
+    width: 300px;
+}
+
+/* Define margem e espaçamento interno em negrito (<b>),
+   só funciona para espaçamento horizontal em elementos inline */
+b {
+    margin: 20px;
+    padding: 20px;
+}
+</style>
+<!-- Fim do CSS -->
+
+<body>
+    <!-- Título da página -->
+    <h1>Propriedade Display</h1>
+    <!-- Explicação sobre a propriedade display -->
+    <p>
+    A propriedade display vai determinar como essas caixinhas retangulares irão se comportar na hora de serem exibidas na tela.
+    </p>
+
+    <!-- Lista de propriedades CSS relacionadas a bordas -->
+    <ul>
+        <li>border-width</li> 
+        <li>border-style</li> 
+        <li>border-color</li>
+    </ul>
+
+    <!-- Subtítulo para a seção de exemplos -->
+    <h2>Exemplo:</h2>  
+
+    <!-- Demonstração de display: block -->
+    <code>display: block;</code> 
+    <br><br>
+    <!-- Exemplo de elementos block: cada um começará em nova linha e ocupará 100% da largura -->
+    <div class="Exemplo">Exemplo Bloco 01</div> 
+    <div class="Exemplo">Exemplo Bloco 02</div>
+    <br><br>
+
+    <!-- Demonstração de display: inline -->
+    <code>display: inline;</code>
+    <br><br>
+
+    <!-- Exemplos de elementos inline: aparecem um ao lado do outro (mesma linha, se houver espaço) -->
+    <span class="Exemplo">Exemplo Inline 01</span>
+    <span class="Exemplo inline">Exemplo Inline 02</span>
+    <em class="Exemplo">Exemplo Inline 03  sdkfwoe lsldfjsdjf  </em>
+    <b class="Exemplo inline">Exemplo Inline 04 </b>
+    <br><br>
+
+    <!-- Exemplo de uso de elementos inline no meio de um parágrafo -->
+    <p>
+    Lorem ipsum <b class="Exemplo"> dolor sit amet,</b> consectetur adipisicing elit. Magnam beatae dolores ratione perspiciatis mollitia cum, nemo fuga. Ex obcaecati ab velit amet libero dignissimos et cupiditate deleniti sequi! Illo, sed!
+    </p>
+</body>
+</html>

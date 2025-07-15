@@ -1,0 +1,72 @@
+<!-- Define o tipo de documento HTML5 e o idioma como português do Brasil -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define a codificação de caracteres como UTF-8, permitindo acentuação -->
+    <meta charset="UTF-8">
+    
+    <!-- Define a largura da tela para dispositivos móveis, tornando o layout responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título que aparece na aba do navegador -->
+    <title>CSS Display None Vs Visibility Hidden</title>
+</head>
+
+<!-- Bloco de estilos CSS -->
+<style>
+    /* Define a fonte do corpo da página. Corrigido 'sant-serif' para 'sans-serif' */
+    body {
+        font-family: Roboto, sans-serif;
+    }
+
+    /* Estilo aplicado aos elementos com a classe 'exemplo': fundo azul claro */
+    .exemplo {
+        background-color: aqua;
+    }
+
+    /* O elemento com id 'item-02' será ocultado visualmente,
+       mas ainda ocupará espaço na página (visibilidade oculta) */
+    #item-02 {
+        visibility: hidden; 
+    }
+
+    /* O elemento com id 'item-05' será completamente removido do fluxo da página (não ocupará espaço) */
+    #item-05 {
+        display: none;
+    }
+</style>
+
+<body>
+
+    <!-- Título principal da página -->
+    <h1>hi display: none vs visibility: hidden</h1>
+
+    <!-- Container com elementos span -->
+    <div>
+        <!-- Visível normalmente -->
+        <span id="item-01" class="exemplo">Item-01</span>
+        
+        <!-- Oculto visualmente, mas ainda ocupa espaço no layout -->
+        <span id="item-02" class="exemplo">Item-02</span>
+        
+        <!-- Visível normalmente -->
+        <span id="item-03" class="exemplo">Item-03</span>
+        
+        <!-- Visível normalmente -->
+        <span id="item-04" class="exemplo">Item-04</span>
+        
+        <!-- Totalmente oculto, não ocupa espaço algum -->
+        <span id="item-05" class="exemplo">Item-05</span>
+        
+        <!-- Visível normalmente -->
+        <span id="item-06" class="exemplo">Item-06</span>
+    </div>
+    
+</body>
+</html>
+
+<!--
+✅ Explicação rápida:
+**visibility: hidden** ➝ o elemento fica invisível, mas continua ocupando espaço no layout.
+**display: none** ➝ o elemento não é exibido e não ocupa espaço nenhum na tela.
+-->
