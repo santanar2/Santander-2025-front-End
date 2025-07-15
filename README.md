@@ -249,3 +249,21 @@ Exercícios e exemplos sobre propriedades de cor, gradientes, imagens de fundo, 
 
 - **10.11 flexbox responsivo com media queries.html** e **10.11 flexbox responsivo com media queries.css**  
   Exemplo de layout flexível usando Flexbox combinado com media queries para ajustar direção, alinhamento e espaçamento dos elementos, garantindo responsividade e boa apresentação em qualquer
+
+  - **11.1 display block.html** e **11.1 display block.css**  
+  Demonstração do comportamento padrão do `display: block` em elementos HTML, ocupando toda a largura disponível e iniciando em uma nova linha.
+
+- **11.2 display inline.html** e **11.2 display inline.css**  
+  Exemplos práticos do uso de `display: inline`, mostrando como elementos ficam lado a lado e não aceitam largura/altura personalizada.
+
+- **11.3 display inline block.html** e **11.3 display inline block.css**  
+  Demonstração do `display: inline-block`, permitindo que elementos fiquem em linha, mas aceitem largura, altura, padding e margin.
+
+- **11.4 display none.html** e **11.4 display none.css**  
+  Exemplo de como ocultar elementos da página usando `display: none`, removendo-os completamente do fluxo do layout.
+
+- **11.5 visibility hidden.html** e **11.5 visibility hidden.css**  
+  Demonstração da diferença entre `display: none` e `visibility: hidden`, onde o elemento fica invisível, mas ainda ocupa espaço na página.
+
+- **11.6 resumo display.html** e **11.6 resumo display.css**  
+  Resumo visual e prático dos principais valores da propriedade `display` (`block`, `inline`, `inline-block`, `none` e `flex`), facilitando a comparação entre
