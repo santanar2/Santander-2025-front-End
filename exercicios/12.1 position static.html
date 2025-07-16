@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Static</title>
+</head>
+    
+    <!--
+        BLOCO DE ESTILIZAÇÃO GERAL DA PÁGINA USANDO CSS.
+        As regras abaixo definem estilo dos elementos exibidos na página,
+        principalmente cor e posição inicial (estático).
+    -->
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+            height: 200vh; /* aumenta a altura para possibilitar scroll */
+        }
+
+        .inline {
+            display: inline-block; /* exibe os elementos na mesma linha */
+        }
+
+        .exemplo {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            /* Nenhuma posição específica, irá usar position: static (padrão) */
+        }
+
+        /* 
+            Cada bloco abaixo define a cor de fundo de cada elemento
+            de exemplo, para diferenciá-los visualmente.
+        */
+        #elemento-1 {
+            background-color: orange;
+        }
+
+        #elemento-2 {
+            background-color: palevioletred;
+        }
+        
+        #elemento-3 {
+            background-color: greenyellow;
+        }
+
+        #elemento-4 {
+            background-color: paleturquoise;
+        }
+
+        #elemento-5 {
+            background-color: violet;
+        }
+
+        #elemento-6 {
+            background-color: blueviolet;
+        }
+
+    </style>
+<body>
+    <!-- 
+        Título principal da página 
+    -->
+    <h1>Posicionando os elementos em tela</h1>
+
+    <!-- 
+        Parágrafo introdutório explicando o propósito da propriedade 'position' 
+    -->    
+    <p>A propriedade position vai nos ajudar a manipular a localização / posição do elemento na sua página.</p>
+
+    <!-- 
+        Lista dos valores possíveis para a propriedade 'position' no CSS
+    -->
+    <ul>
+        <li><code>position: static;</code></li>
+        <li><code>position: relative;</code></li>
+        <li><code>position: absolute;</code></li>
+        <li><code>position: fixed;</code></li>
+        <li><code>position: sticky;</code></li>
+    </ul>
+
+    <h3>Exemplos:</h3>
+
+    <!--
+        Exemplo de três elementos exibidos em linha (inline-block)
+        Cada um tem cor diferente definida no CSS acima
+    -->
+    <div id="elemento-1" class="exemplo inline">Elemento 01</div>
+    <div id="elemento-2" class="exemplo inline">Elemento 02</div>
+    <div id="elemento-3" class="exemplo inline">Elemento 03</div>
+
+    <hr>
+
+    <!--
+        Exemplo de três elementos exibidos em bloco (block)
+        Um embaixo do outro. Cada um tem cor diferente definida no CSS acima
+    -->
+    <div id="elemento-4" class="exemplo ">Elemento A</div>
+    <div id="elemento-5" class="exemplo ">Elemento B</div>
+    <div id="elemento-6" class="exemplo ">Elemento C</div>
+</body>
+</html>
