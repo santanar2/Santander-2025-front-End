@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Fixed</title>
+</head>
+
+<!--
+    BLOCO DE ESTILIZAÇÃO GERAL DA PÁGINA USANDO CSS.
+    Define estilos para corpo, elementos de exemplo e posicionamentos.
+-->
+<style>
+    /* Define fonte padrão e altura da página para permitir rolagem */
+    body {
+        font-family: Roboto, sans-serif;
+        height: 200vh; /* altura grande para testar o scroll */
+    }
+
+    /* Faz os elementos ficarem lado a lado (linha) */
+    .inline {
+        display: inline-block;
+    }
+
+    /* Estilo base para todos os blocos de exemplo */
+    .exemplo {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 4px;
+        /* Por padrão, o position é static */
+    }
+
+    /*
+        Elemento 1:
+        Usa position: fixed, ou seja, ficará **fixo no canto inferior direito**
+        da janela, mesmo durante o scroll da página.
+    */
+    #elemento-1 {
+        background-color: orange;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+    /*
+        Elemento 2:
+        Usa position: sticky;
+        Vai se comportar como um elemento comum até atingir o topo da página.
+        Quando chegar no topo, **ficará colado** ali durante o scroll.
+    */
+    #elemento-2 {
+        background-color: palevioletred;
+        position: sticky;
+        top: 0;
+    }
+
+    /* Elemento 3: sem position definida, segue o fluxo normal da página */
+    #elemento-3 {
+        background-color: greenyellow;
+    }
+
+    /* Elemento 4: apenas cor definida */
+    #elemento-4 {
+        background-color: paleturquoise;
+    }
+
+    /*
+        Elemento 5: também usa position: sticky com top: 0
+        Vai grudar no topo da tela ao rolar a página, semelhante ao elemento 2.
+    */
+    #elemento-5 {
+        background-color: violet;
+        position: sticky;
+        top: 0;
+    }
+
+    /* Elemento 6: cor roxa, sem position específica */
+    #elemento-6 {
+        background-color: blueviolet;
+    }
+
+</style>
+
+<body>
+    <!-- Título principal da página -->
+    <h1>Posicionando os elementos em tela</h1>
+
+    <!-- Texto explicativo sobre o uso da propriedade 'position' -->
+    <p>A propriedade position vai nos ajudar a manipular a localização / posição do elemento na sua página.</p>
+
+    <!-- Lista dos valores disponíveis para a propriedade 'position' -->
+    <ul>
+        <li><code>position: static;</code></li>
+        <li><code>position: relative;</code></li>
+        <li><code>position: absolute;</code></li>
+        <li><code>position: fixed;</code></li>
+        <li><code>position: sticky;</code></li>
+    </ul>
+
+    <h3>Exemplos:</h3>
+
+    <!-- 
+        Três elementos em linha:
+        - Elemento 1: fixo no canto inferior direito (position: fixed)
+        - Elemento 2: grudará no topo ao rolar (position: sticky)
+        - Elemento 3: estático, segue o fluxo normal
+    -->
+    <div id="elemento-1" class="exemplo inline">Elemento 01</div>
+    <div id="elemento-2" class="exemplo inline">Elemento 02</div>
+    <div id="elemento-3" class="exemplo inline">Elemento 03</div>
+
+    <hr>
+
+    <!-- 
+        Três elementos em bloco:
+        - Elemento A: estático
+        - Elemento B: sticky (gruda no topo quando atinge)
+        - Elemento C: estático
+    -->
+    <div id="elemento-4" class="exemplo">Elemento A</div>
+    <div id="elemento-5" class="exemplo">Elemento B</div>
+    <div id="elemento-6" class="exemplo">Elemento C</div>
+</body>
+</html>
+
+
+### ✅ Resumo do comportamento dos elementos:
+
+- **Elemento 1** (`fixed`): Sempre visível no canto inferior direito, mesmo com rolagem.
+<br><br>
+- **Elemento 2 e 5** (`sticky`): Ficam no fluxo normal até colarem no topo ao rolar a página.
+<br><br>
+- **Demais elementos**: `static`, seguem o fluxo normal.
+

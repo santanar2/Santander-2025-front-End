@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Absolute</title>
+</head>
+    
+<!--
+    BLOCO DE ESTILIZAÇÃO GERAL DA PÁGINA USANDO CSS.
+    Define fontes, altura da tela, cores e posicionamento de elementos.
+-->
+<style>
+    /* Define fonte e altura da página */
+    body {
+        font-family: Roboto, sans-serif;
+        height: 200vh; /* aumenta a altura para permitir rolagem */
+    }
+
+    /* Exibe os elementos na mesma linha */
+    .inline {
+        display: inline-block;
+    }
+
+    /* Estilo base comum para todos os elementos de exemplo */
+    .exemplo {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 4px;
+        /* Sem position definido aqui, ou seja: position: static (padrão) */
+    }
+
+    /* Elemento 1: sem position, apenas cor laranja */
+    #elemento-1 {
+        background-color: orange;
+    }
+
+    /* 
+        Elemento 2: usa position: absolute;
+        Fica posicionado no canto superior direito da janela (por estar fora de um elemento pai com position: relative);
+        Opacidade reduzida para mostrar elementos atrás.
+    */
+    #elemento-2 {
+        background-color: palevioletred;
+        position: absolute;
+        opacity: .5;
+        right: 0px;
+    }
+    
+    /* 
+        Elemento 3: usa position: absolute;
+        É deslocado 100px da esquerda da janela, flutuando independentemente do fluxo normal.
+    */
+    #elemento-3 {
+        background-color: greenyellow;
+        position: absolute;
+        opacity: .5;
+        left: 100px;
+    }
+
+    /* Elementos A, B e C: apenas cores diferentes, sem uso de position */
+    #elemento-4 {
+        background-color: paleturquoise;
+    }
+
+    #elemento-5 {
+        background-color: violet;
+    }
+
+    #elemento-6 {
+        background-color: blueviolet;
+    }
+
+    /*
+        Elemento pai com position: relative;
+        Isso faz com que os elementos absolutos dentro dele se posicionem em relação a ele.
+    */
+    #elemento-pai {
+        box-sizing: border-box;
+        height: 300px;
+        padding: 10px;
+        border: 1px solid red;
+        position: relative;
+    }
+
+    /*
+        Elemento filho com position: absolute;
+        Fica posicionado no canto superior direito do elemento pai (#elemento-pai), graças ao relative do pai.
+    */
+    #elemento-filho {
+        background-color: darkorange;
+        position: absolute;
+        top: 0; 
+        right: 0;   
+        margin: 0;
+    }
+
+    /*
+        Container para imagem com título sobreposto.
+        Usa position: relative para posicionar o h3 sobre a imagem.
+    */
+    .container {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        position: relative;
+    }
+
+    /* Estilo da imagem */
+    .container img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /*
+        Título da imagem posicionado com position: absolute;
+        Fica centralizado verticalmente e com margem da esquerda.
+    */
+    .container h3 {
+        font-size: 30px;
+        font-weight: 900;
+        margin: 0;
+        position: absolute;
+        top: 50%; /* centraliza verticalmente */
+        left: 10%;
+        color: white;
+    }
+</style>
+
+<body>
+    <!-- 
+        Título principal da página 
+    -->
+    <h1>Posicionando os elementos em tela</h1>
+
+    <!-- 
+        Parágrafo explicando a utilidade da propriedade position 
+    -->    
+    <p>A propriedade position vai nos ajudar a manipular a localização / posição do elemento na sua página.</p>
+
+    <!-- 
+        Lista dos valores possíveis para a propriedade 'position'
+    -->
+    <ul>
+        <li><code>position: static;</code></li>
+        <li><code>position: relative;</code></li>
+        <li><code>position: absolute;</code></li>
+        <li><code>position: fixed;</code></li>
+        <li><code>position: sticky;</code></li>
+    </ul>
+
+    <h3>Exemplos:</h3>
+
+    <!--
+        Três elementos exibidos lado a lado
+        Elemento 2 e 3 usam position: absolute, saindo do fluxo da página
+    -->
+    <div id="elemento-1" class="exemplo inline">Elemento 01</div>
+    <div id="elemento-2" class="exemplo inline">Elemento 02</div>
+    <div id="elemento-3" class="exemplo inline">Elemento 03</div>
+
+    <hr>
+
+    <!--
+        Três elementos exibidos em bloco, sem position definida
+        Permanecem no fluxo normal do layout
+    -->
+    <div id="elemento-4" class="exemplo">Elemento A</div>
+    <div id="elemento-5" class="exemplo">Elemento B</div>
+    <div id="elemento-6" class="exemplo">Elemento C</div>
+
+    <hr>
+
+    <!--
+        Exemplo de elemento filho posicionado com base no pai
+        Pai tem position: relative, filho tem position: absolute
+    -->
+    <div id="elemento-pai">
+        <div id="elemento-filho" class="exemplo"></div>
+    </div>
+
+    <hr>
+
+    <!--
+        Imagem com texto posicionado sobre ela
+        Container tem position: relative
+        Título usa position: absolute para sobreposição
+    -->
+    <div class="container">
+        <img src="https://static1.thmais.com.br/wp-content/uploads/2024/01/Foto-Aerea-de-Praia-Grande-2-768x432.jpg" alt="Foto Aérea de Praia Grande">
+        <h3>PRAIA GRANDE</h3>
+    </div>
+</body>
+</html>
