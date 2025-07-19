@@ -3,54 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Position Static</title>
+    <title>CSS Position relative</title>
 </head>
     
-    <style>
+<style>
 
-        body {
-            font-family: Roboto, sans-serif;
-            height: 200vh;
-        }
+    /* Define a fonte da página e altura total da visualização para permitir rolagem */
+    body {
+        font-family: Roboto, sans-serif;
+        height: 200vh;
+    }
 
-        .inline {
-            display: inline-block;
-        }
+    /* Define que os elementos filhos serão exibidos lado a lado, em linha */
+    .inline {
+        display: inline-block;
+    }
 
-        .exemplo {
-            width: 100px;
-            height: 100px;
-            margin: 10px;
-            padding: 10px;
-            border-radius: 4px;
-            
-        }
+    /* Estilização comum para todos os elementos de exemplo */
+    .exemplo {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 4px;
+    }
 
-        #elemento-1 {
-            background-color: orange;
-        }
+    /* Elemento 1: deslocado 50px para a direita usando position: relative */
+    #elemento-1 {
+        background-color: orange;
+        position: relative;
+        left: 50px;
+    }
 
-        #elemento-2 {
-            background-color: palevioletred;
-        }
-        
-        #elemento-3 {
-            background-color: greenyellow;
-        }
+    /* Elemento 2: deslocado 50px para baixo e 50px para a direita */
+    #elemento-2 {
+        background-color: palevioletred;
+        position: relative; 
+        top: 50px;
+        left: 50px;
+    }
 
-        #elemento-4 {
-            background-color: paleturquoise;
-        }
+    /* Elemento 3: deslocado 60px para cima */
+    #elemento-3 {
+        background-color: greenyellow;
+        position: relative;
+        bottom: 60px;
+    }
 
-        #elemento-5 {
-            background-color: violet;
-        }
+    /* Elemento 4: deslocado 50px para baixo e 10px para a esquerda */
+    #elemento-4 {
+        background-color: paleturquoise;
+        position: relative;
+        top: 50px;
+        right: 10px;
+    }
 
-        #elemento-6 {
-            background-color: blueviolet;
-        }
+    /* Elemento 5: deslocado 100px para baixo */
+    #elemento-5 {
+        background-color: violet;
+        position: relative;
+        top: 100px;
+    }
 
-    </style>
+    /* Elemento 6: sem deslocamento; permanece em sua posição original */
+    #elemento-6 {
+        background-color: blueviolet;
+    }
+
+</style>
 <body>
     <h1>Posicionando os elementos em tela</h1>
 
@@ -66,17 +86,25 @@
 
     <h3>Exemplos:</h3>
 
+    <!-- Elemento 01: deslocado 50px à direita -->
     <div id="elemento-1" class="exemplo inline">Elemento 01</div>
+
+    <!-- Elemento 02: deslocado 50px à direita e 50px para baixo -->
     <div id="elemento-2" class="exemplo inline">Elemento 02</div>
+
+    <!-- Elemento 03: deslocado 60px para cima -->
     <div id="elemento-3" class="exemplo inline">Elemento 03</div>
 
     <hr>
 
+    <!-- Elemento A: deslocado 50px para baixo e 10px para a esquerda -->
     <div id="elemento-4" class="exemplo ">Elemento A</div>
+
+    <!-- Elemento B: deslocado 100px para baixo -->
     <div id="elemento-5" class="exemplo ">Elemento B</div>
+
+    <!-- Elemento C: permanece sem deslocamento -->
     <div id="elemento-6" class="exemplo ">Elemento C</div>
 
-
-    
 </body>
 </html>
