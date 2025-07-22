@@ -1,0 +1,11 @@
+.container {
+    background: palegreen;
+    padding:  20px;
+    display: inline-flex;
+
+}
+
+.item {
+    background: orange;
+    margin: 10px;
+}
