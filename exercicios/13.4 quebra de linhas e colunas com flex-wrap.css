@@ -1,0 +1,35 @@
+/* Define um container com:
+   - fundo verde claro (palegreen),
+   - espaçamento interno (padding) de 20px,
+   - espaçamento externo (margin) de 20px,
+   - exibição do tipo flex (layout flexível),
+   - e quebra de linha ativada quando os itens ultrapassam a largura. */
+.container {
+    background: palegreen;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Define o estilo para cada item dentro do container:
+   - fundo laranja (orange),
+   - margem externa de 10px. */
+.item {
+    background: orange;
+    margin: 10px;
+}
+
+/* Define que os itens no container com ID 'container-01'
+   serão organizados na direção de linha (horizontalmente). */
+#container-01 {
+    flex-direction: row;
+}
+
+/* Define que os itens no container com ID 'container-02'
+   serão organizados na direção de coluna (verticalmente),
+   e define a altura total do container como 350px para permitir essa organização. */
+#container-02 {
+    flex-direction: column;
+    height: 350px;
+}

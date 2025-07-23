@@ -1,0 +1,29 @@
+/* Estiliza o container principal, dando cor de fundo, espaçamento interno e externo, 
+   além de definir o display como flex para ativar o layout flexível. */
+.container {
+    background: palegreen;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+}
+
+/* Estiliza cada item dentro do container, dando cor de fundo e margem entre eles. */
+.item {
+    background: orange;
+    margin: 10px;
+}
+
+/* Para o container com id container-01, define que os itens flex vão dispor-se em linha (row)
+   e podem quebrar linha (wrap) se não couberem em uma só. */
+#container-01 {
+    flex-flow: row wrap;
+}
+
+/* Para o container com id container-02, define que os itens flex vão dispor-se em coluna (column)
+   e se as colunas precisarem quebrar, será no sentido inverso (wrap-reverse).
+   Também define altura fixa de 350px para o container. */
+#container-02 {
+    flex-flow: column wrap-reverse;
+    height: 350px;
+}
+
