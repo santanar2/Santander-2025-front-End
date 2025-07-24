@@ -1,0 +1,44 @@
+/* Estiliza o container principal:
+   - Define a cor de fundo como verde-claro (palegreen)
+   - Define margens externas, largura e altura fixas
+   - Aplica espaçamento interno (padding)
+   - Ativa o modelo de layout flexível (flex)
+   - Alinha os itens horizontalmente com espaçamento igual (justify-content)
+   - Alinha os itens ao topo do container (align-items)
+   - Define o comportamento padrão do alinhamento de conteúdo (align-content) */
+.container {
+    background: palegreen;
+    margin: 20px;
+    width: 300px;
+    padding: 10px;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: normal;
+}
+
+/* Estiliza os itens dentro do container:
+   - Cor de fundo laranja
+   - Altura e largura fixas de 40px */
+.item {
+    background-color: orange;
+    height: 40px;
+    width: 40px;
+}
+
+/* Define o comportamento de layout flexível para o container com ID "container-01":
+   - Direção dos itens na horizontal (linha)
+   - Permite que os itens quebrem para a linha anterior (wrap-reverse) */
+#container-01 {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+/* Define o comportamento de layout flexível para o container com ID "container-02":
+   - Direção dos itens na vertical (coluna)
+   - Permite que os itens quebrem para a próxima coluna (wrap) */
+#container-02 {
+    flex-direction: column;
+    flex-wrap: wrap;
+}

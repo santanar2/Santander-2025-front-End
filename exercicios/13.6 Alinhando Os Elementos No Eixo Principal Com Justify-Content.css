@@ -1,0 +1,40 @@
+/* Estiliza o container principal:
+   - Define cor de fundo (palegreen),
+   - Espaçamento interno (padding) e externo (margin),
+   - Largura fixa de 300px,
+   - Usa display flex para aplicar layout flexível,
+   - Distribui os itens uniformemente com espaço igual entre eles (justify-content: space-evenly). */
+.container {
+    background: palegreen;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Estiliza os itens dentro do container:
+   - Define cor de fundo (laranja),
+   - Adiciona espaçamento externo (margin) entre os itens. */
+.item {
+    background: orange;
+    margin: 10px;
+}
+
+/* Configura o container com ID "container-01":
+   - Alinha os itens na horizontal (row),
+   - Permite que os itens quebrem linha se não couberem (wrap). */
+#container-01 {
+    flex-flow: row wrap;
+}
+
+/* Configura o container com ID "container-02":
+   - Alinha os itens na vertical (column),
+   - Permite quebra de coluna no sentido inverso (wrap-reverse),
+   - Define altura fixa de 350px para o container. */
+#container-02 {
+    flex-flow: column wrap-reverse;
+    height: 350px;
+}
+
