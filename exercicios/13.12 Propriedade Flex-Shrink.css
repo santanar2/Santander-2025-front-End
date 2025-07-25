@@ -1,0 +1,53 @@
+/* Estiliza o container principal:
+   - Cor de fundo: azul-violeta.
+   - Espaçamento interno: 30px.
+   - Espaçamento inferior externo: 30px.
+   - Dimensões fixas: 300px de largura e altura.
+   - Ativa o layout flexível e define um espaçamento (gap) de 10px entre os itens. */
+.container {
+    background: blueviolet;
+    padding: 30px;
+    margin-bottom: 30px;
+
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    gap: 10px;
+}
+
+/* Define a direção dos itens do container como linha (horizontal)
+   e impede que os itens quebrem para uma nova linha. */
+#container-01 {
+    flex-flow: row nowrap;
+}
+
+/* Define a direção dos itens do container como coluna (vertical)
+   e impede que os itens quebrem para uma nova "coluna". */
+#container-02 {
+    flex-flow: column nowrap;
+}
+
+/* Estiliza os itens internos do container:
+   - Cor de fundo: amarelo.
+   - Padding interno: 8px.
+   - Tamanho fixo: 50px de largura e altura.
+   - flex-shrink: 1 → permite que o item diminua de tamanho quando necessário.
+   - Define valores mínimos de largura e altura (30px). */
+.item {
+    background-color: rgb(255, 234, 0);
+    padding: 8px;
+
+    width: 50px;
+    height: 50px;
+    flex-shrink: 1;
+
+    min-width: 30px;
+    min-height: 30px;
+}
+
+/* Especifica que este item encolhe o dobro em relação aos outros,
+   ou seja, se faltar espaço, ele será reduzido mais agressivamente. */
+.item-03 {
+    flex-shrink: 2;
+}

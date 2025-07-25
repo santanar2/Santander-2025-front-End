@@ -1,0 +1,34 @@
+
+.container {
+    background: blueviolet;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    display: flex;
+    gap: 10px;
+
+}
+
+
+#container-01 {
+    flex-flow: row wrap;
+}
+
+
+#container-02 {
+    flex-flow: column wrap;
+}
+
+.item {
+    background-color: rgb(255, 234, 0);
+    pad: 8px;
+    
+}
+
+.item-04 {
+    order: -1;
+}
+
+.item-09 {
+    order: -2;
+}
