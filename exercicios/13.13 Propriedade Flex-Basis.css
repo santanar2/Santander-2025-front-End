@@ -1,0 +1,28 @@
+
+.container {
+    background: blueviolet;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.item {
+    background-color: rgb(255, 234, 0);
+    width: 100px;
+    text-align: center;
+
+    flex-grow: 1;
+
+}
+
+.item-02 {
+    flex-basis: 0;
+}
+
+
