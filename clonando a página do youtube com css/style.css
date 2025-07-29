@@ -1,16 +1,22 @@
 body {
+    
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
+    grid-template-columns: 1fr auto 1fr;
+    
 }
 
 
 
 .topo {
-    display: grid;
+    display: flex;
+    justify-content: space-between; 
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 10px;
+    
+    
 }
 
 .left {
@@ -28,8 +34,10 @@ body {
 
 .container {
     display: flex;
+    grid-template-columns: 1fr auto 1fr;
     padding: 20px;
     gap: 20px;
+    
 }
 
 
@@ -64,19 +72,36 @@ body {
 }
 
 
-.subscribe {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    cursor: pointer;
+.dio  {
+    display: flex;
+    -ms-flex-item-align:auto;
+    flex-flow: row nowrap;
+    margin-right: 1px;
+    padding: 8px 12px;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+        
+}
+
+
+
+.buttons {
+    display: flex;
+    align-items: center; /* Alinha os botões verticalmente no centro */
+    height: 100%; /* ou um valor fixo, ex: 80px */
+    gap: 10px;
 }
 
 .buttons button {
-    margin-right: 10px;
-    padding: 5px 10px;
+    border: none;
+    background: none;
+    padding: 0;
     cursor: pointer;
 }
+
+
 
 
 .views {
