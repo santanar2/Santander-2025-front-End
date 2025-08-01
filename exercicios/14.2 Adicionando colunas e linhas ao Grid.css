@@ -1,15 +1,69 @@
+/* Container com layout em grid:
+- Altura de 500px
+- 4 colunas: repete 3 vezes um padrão de 1fr 2fr, depois adiciona uma coluna fixa de 100px
+- 3 linhas com alturas relativas: 2fr, 1fr e 1fr
+*/
 .container {
     background: yellow;
-    padding:  10px;
+    padding: 10px;
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: 200px 300px 100px 150px;
-    grid-template-rows: 300px 200px 150px;
+    height: 500px;
+    grid-template-columns: repeat(3, 1fr 2fr) 100px;
+    grid-template-rows: 2fr 1fr 1fr;
 }
 
+/* Container com layout em grid:
+- Usa `auto-fill` para repetir colunas de 100px automaticamente com base no espaço disponível
+- 3 linhas com alturas relativas
+- Responsivo: adiciona mais colunas conforme o espaço permitir, mesmo que algumas fiquem vazias
+*/
+.container-02 {
+    background: rgb(0, 255, 30);
+    padding: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-template-rows: 2fr 1fr 1fr;
+}
+
+/* Container com layout em grid:
+- Usa `auto-fit` para repetir colunas de 100px automaticamente e fazer com que ocupem o máximo de espaço possível
+- Difere de `auto-fill` pois colapsa colunas vazias
+- Também possui 3 linhas com alturas relativas
+*/
+.container-03 {
+    background: rgb(0, 225, 255);
+    padding: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: 2fr 1fr 1fr;
+}
+
+/* Container com layout em grid:
+- Define a largura das colunas com base no conteúdo mínimo (min-content)
+- Isso significa que a largura da coluna será apenas o suficiente para conter o maior conteúdo sem quebrar linha
+*/
+.container-04 {
+    background: rgb(255, 0, 204);
+    padding: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: min-content;
+}
+
+/* Estilo comum aplicado a todos os itens:
+- Adiciona uma borda preta para melhor visualização dos elementos
+*/
 .item {
     border: 1px solid black; 
 }
+
+/* Estilos individuais para cada item, aplicando cores de fundo distintas para diferenciação visual */
 .item-01 {
     background: palevioletred;
 }
@@ -40,4 +94,20 @@
 
 .item-08 {
     background-color: blue;
+}
+
+.item-09 {
+    background: rgb(230, 11, 15);
+}
+
+.item-10 {
+    background-color: rgb(234, 236, 240);
+}
+
+.item-11 {
+    background-color: rgb(9, 243, 9);
+}
+
+.item-12 {
+    background-color: rgb(239, 10, 10);
 }
