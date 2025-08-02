@@ -1,0 +1,110 @@
+/* Container com layout em grid:
+- Fundo amarelo, padding de 10px e margem inferior de 20px
+- Define 3 colunas com largura proporcional (1fr cada)
+- Define a altura automática das linhas com altura mínima de 100px
+*/
+.container {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+/* Container com layout em grid:
+- Fundo verde, altura de 500px
+- 2 colunas com largura mínima de 50px e máxima de 200px
+*/
+.container-02 {
+    background: rgb(0, 255, 30);
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: minmax(50px, 200px) minmax(50px, 200px);
+}
+
+/* Container com layout em grid:
+- Fundo azul, altura de 500px
+- 3 colunas repetidas com largura mínima de 130px e máxima automática
+*/
+.container-03 {
+    background: rgb(0, 225, 255);
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(130px, auto));
+}
+
+/* Container com layout em grid:
+- Fundo rosa, altura de 500px
+- Define as colunas com base no conteúdo mínimo (min-content), ou seja, o conteúdo define a largura
+*/
+.container-04 {
+    background: rgb(255, 0, 204);
+    padding: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: min-content;
+}
+
+/* Estilo comum para todos os itens:
+- Adiciona uma borda preta ao redor dos elementos */
+.item {
+    border: 1px solid black; 
+}
+
+/* Estilos individuais dos itens com cores diferentes para visualização */
+.item-01 {
+    background: palevioletred;
+}
+
+.item-02 {
+    background-color: cornflowerblue;
+}
+
+.item-03 {
+    background-color: palegreen;
+}
+
+.item-04 {
+    background-color: orange;
+}
+
+.item-05 {
+    background-color: rgb(250, 252, 252);
+}
+
+.item-06 {
+    background-color: aqua;
+}
+
+.item-07 {
+    background-color: orchid;
+}
+
+.item-08 {
+    background-color: blue;
+}
+
+.item-09 {
+    background: rgb(230, 11, 15);
+}
+
+.item-10 {
+    background-color: rgb(234, 236, 240);
+}
+
+.item-11 {
+    background-color: rgb(9, 243, 9);
+}
+
+.item-12 {
+    background-color: rgb(239, 10, 10);
+}
