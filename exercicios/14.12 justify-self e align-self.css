@@ -1,0 +1,197 @@
+.container {
+    display: grid;
+    border: 3px solid;
+    height: 90vh;
+    grid-template:  repeat(3, 1fr) / repeat(3, auto);
+    
+    place-items: center;
+
+    
+
+}
+
+.container-2 {
+    display: grid;
+    border: 3px solid;
+    height: 90vh;
+    grid-template: repeat(3, auto) / repeat(3, auto);
+    
+    place-items: center;
+    justify-content: end;
+
+}
+
+.container-3 {
+    display: grid;
+    border:3px solid;
+    height: 90vh;
+    grid-template: repeat(3, auto) / repeat(3, auto);
+
+    place-items: center;
+    align-content: stretch;
+
+}   
+
+.container-4 {
+    display: grid;
+    border: 3px solid; 
+    height: 90vh;
+    grid-template: repeat(3, auto) / repeat(3, auto);
+    
+    place-items: center;
+    justify-content: space-around;
+    
+}
+
+.container-5 {
+    display: grid;
+    border: 3px solid; 
+    height: 90vh;
+    grid-template: repeat(3, auto) / repeat(3, auto);
+
+    place-items: center;
+    justify-content: space-between;
+
+}
+
+.container-6 {
+    display: grid;
+    border: 3px solid; 
+    height: 90vh;
+    grid-template: repeat(3, auto) / repeat(3, auto);
+
+    place-items: center;
+    justify-content: space-evenly;
+
+}
+
+.container-7 {
+    display: grid;
+    border: 3px solid; 
+    height: 90vh;
+    grid-template: repeat(3, 100px) / repeat(3, auto);
+
+    place-items: center;
+    justify-content: space-evenly;
+    align-content: start;
+
+}
+
+.container-8 {
+    display: grid;
+    border: 3px solid; 
+    height: 90vh;
+    grid-template: repeat(3, 100px) / repeat(3, auto);
+
+    place-items: center;
+    justify-content: space-evenly;
+    align-content: end;  
+
+}
+
+.container-9 {
+    display: grid;
+    border: 3px solid; 
+    height: 90vh;
+    grid-template: repeat(3, 100px) / repeat(3, auto);
+
+    place-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+
+.container-10 {
+    display: grid;
+    border: 3px solid; 
+    height: 90vh;
+    grid-template: repeat(3, auto) / repeat(3, auto);
+
+    place-items: center;
+    justify-content: space-evenly;
+    align-content: stretch;   
+
+}
+
+.container-11 {
+    display: grid;
+    border: 3px solid; 
+    height: 90vh;
+    grid-template: repeat(3, 100px) / repeat(3, auto);
+
+    place-items: center;
+    justify-content: space-evenly;
+    align-content: space-around;  
+
+}
+
+.container-12 {
+    display: grid;
+    border: 3px solid; 
+    height: 90vh;
+    grid-template: repeat(3, 100px) / repeat(3, auto);
+
+    place-items: center;
+    justify-content: space-evenly;
+    align-content: space-between;
+
+}
+
+.container-13 {
+    display: grid;
+    border: 3px solid; 
+    height: 90vh;
+    grid-template: repeat(3, 100px) / repeat(3, auto);
+
+    place-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;   
+
+}
+    
+
+.item-01 {
+    background: rgb(241, 74, 18); 
+    justify-self: stretch;
+}
+
+.item-02 {
+    background: paleturquoise;
+    align-self: start;
+}
+
+.item-03 {
+    background: palegreen;
+    justify-self: end;
+}
+
+.item-04 {
+    background: palevioletred;
+    place-self: start stretch;
+}
+
+.item-05 {
+    background:rgb(30, 170, 30);
+    justify-self: start;
+}
+
+.item-06 {
+    background: rgb(155, 112, 199);
+    align-self: flex-end;
+}
+
+.item-07 {
+    background: greenyellow;
+    align-self: stretch;
+}
+
+.item-08 {
+    background: yellow;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.item-09 {
+    background: lightseagreen;
+    justify-self: stretch;
+}
