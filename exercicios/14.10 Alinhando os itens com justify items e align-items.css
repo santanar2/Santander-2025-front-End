@@ -1,0 +1,104 @@
+.container {
+    display: grid;
+    border: 3px solid;
+    height: 90vh;
+    grid-template:  repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 15px;
+    justify-items: start;
+
+}
+
+.container-2 {
+    display: grid;
+    border: 3px solid;
+    height: 90vh;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 15px;
+    justify-items: end;
+
+}
+
+.container-3 {
+    display: grid;
+    border:3px solid;
+    height: 90vh;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 15px;
+    justify-items:center ;
+
+}   
+
+.container-4 {
+    display: grid;
+    border: 3px solid;
+    height: 90vh;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    align-items: start;
+}
+
+.container-5 {
+    display: grid;
+    border: 3px solid;
+    height: 90vh;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    align-items: end;
+}
+
+.container-6 {
+    display: grid;
+    border: 3px solid;
+    height: 90vh;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+}
+
+.container-7 {
+    display: grid;
+    border: 3px solid;
+    height: 90vh;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 15px; 
+    place-items: start end;
+}
+
+.item-01 {
+    background: palegoldenrod; 
+}
+
+.item-02 {
+    background: paleturquoise;
+}
+
+.item-03 {
+    background: palegreen;
+}
+
+.item-04 {
+    background: palevioletred;
+}
+
+.item-05 {
+    background:rgb(30, 170, 30);
+}
+
+.item-06 {
+    background: rgb(155, 112, 199);
+}
+
+.item-07 {
+    background: greenyellow;
+}
+
+.item-08 {
+    background: yellow;
+}
+
+.item-09 {
+    background: lightseagreen;
+}

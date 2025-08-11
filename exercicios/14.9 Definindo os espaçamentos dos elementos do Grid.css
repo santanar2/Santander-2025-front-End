@@ -1,0 +1,54 @@
+
+.container {
+    
+    display:  grid;
+    border: 3px solid;
+    grid-template: repeat(3, 200px) / repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+
+.item {
+    border: 1px solid black; 
+    
+}
+
+
+.item-01 {
+    background: rgb(245, 242, 30); 
+}
+
+.item-02 {
+    background-color: cornflowerblue;
+}
+
+.item-03 {
+    background-color: palegreen;
+}
+
+.item-04 {
+    background-color: orange;
+}
+
+.item-05 {
+    background-color: cadetblue;
+}
+
+.item-06 {
+    background-color: aqua;
+}
+
+.item-07 {
+    background-color: orchid;
+}
+
+.item-08 {
+    background-color: blue;
+}
+
+.item-09 {
+    background: rgb(230, 11, 15);
+}
+
+
