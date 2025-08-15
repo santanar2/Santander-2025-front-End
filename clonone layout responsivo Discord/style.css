@@ -1,0 +1,218 @@
+.container {
+    margin: 0;
+    grid-template: auto
+    "header header header header"
+    ". main-1 main-1 ."
+    ". main-2 main-2 ."
+    ". main-3 main-3 ."
+    ". main-4 main-4 ."
+    "footer footer footer footer"
+    
+    / 1fr 2fr 1fr 1fr;
+    height: 100vh;
+    display: grid;
+
+}    
+
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 400px;
+    background: url('header 1.png') center/cover no-repeat;
+    color: white;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.header img {
+    display: none; 
+    max-width: 100%;
+    height: auto;
+}
+
+.header h1 {
+    font-size: clamp(1.8rem, 5vw, 2rem);
+    margin-bottom: 1rem;
+}
+
+.header h3 {
+    font-size: clamp(1rem, 2.0vw, 1.0rem);
+    font-weight: 400;
+    max-width: 900px;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+    gap: 1rem; /* espaço entre os botões */
+    margin-top: 1.5rem;
+}
+
+.Windows, .Discord {
+    padding: 1rem 2rem;
+    border-radius: 200px; /* deixa oval */
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Windows {
+    background-color: #f3f4f8;
+    color: rgb(11, 11, 11);
+}
+
+.Discord {
+    background-color: #070707;
+    color: white;
+}
+
+
+.discord:hover {
+    background-color: #0a0a0a;
+}
+
+.main-1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 5%;
+}
+
+.main-1 h1 {
+    font-size: clamp(2.5rem, 5vw, 1.0rem;
+    font-weight: 800;
+    margin-bottom: -1.0rem;
+    margin-top: 0;
+    margin-left: 0;
+    color: #23272a;
+    line-height: 1.2;
+}
+
+.main-1 p {
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    margin-top: 0;
+    margin-left: 0;
+    color: #747f8d;
+    line-height: 1.0;
+    max-width: 500px;
+}
+
+
+
+
+
+.main-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 5%;
+}
+
+.main-2 img {
+    max-width: 100%;
+    height: auto;
+    right: 10px;
+}
+
+.main-2 h1 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.main-2 p {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+
+
+.main-3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 5%;
+}
+
+.text h1 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.text p {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+
+.main-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 5%;
+}
+
+.main-4 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text h1 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.text p {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+/* Alterna a ordem da imagem/texto no main-2 e main-4 */
+.main-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-4 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer img {
+    width: 100%;
+    height: auto;
+    display: block; /* remove espaços em branco abaixo da imagem */
+}
+
+
+/* Layout empilhado no celular */
+@media (max-width: 768px) {
+    .main-1,
+    .main-2,
+    .main-3,
+    .main-4 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
