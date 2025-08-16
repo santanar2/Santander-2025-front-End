@@ -80,36 +80,43 @@
     background-color: #0a0a0a;
 }
 
-.main-1 img {
-    max-width: 100%;
-    height: auto;
-}
 
 .main-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 2rem;
+    display: flex;
     padding: 2rem 5%;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.main-1 img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 100px;
+    
 }
 
 .main-1 h1 {
-    font-size: clamp(2.5rem, 5vw, 1.0rem;
+    font-size: clamp(2.5rem, 4vw, 2rem);
     font-weight: 800;
-    margin-bottom: -1.0rem;
-    margin-top: 0;
-    margin-left: 0;
+    margin-bottom: 1.0rem;
+    margin-top: 10px;
+    margin-left: -30px;
     color: #23272a;
-    line-height: 1.2;
+    line-height: 1.2; 
 }
 
 .main-1 p {
-    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
-    margin-top: 0;
-    margin-left: 0;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    margin-top: 50px; 
+    margin-left: -30px;
     color: #747f8d;
     line-height: 1.0;
     max-width: 500px;
+    
 }
 
 
@@ -117,51 +124,101 @@
 
 
 .main-2 {
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 2rem;
     padding: 2rem 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-2 img {
     max-width: 100%;
     height: auto;
-    right: 10px;
+    display: block;
+    margin: 2rem 0;
+    position: relative;
+    left: 650px;
+    top: -420px;
+}
+
+.main-2 {
+    text-align: left;       /* alinhamento de todo texto */
+    padding-left: 0;        /* ajuste conforme necessário */
+    margin-left: -700px;
+    margin-top: 100px;
 }
 
 .main-2 h1 {
-    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-size: clamp(2.5rem, 5vw, 2rem);
+    font-weight: 800;
     margin-bottom: 1rem;
+    margin-top: -10px;
+    color: #23272a;
+    line-height: 1.2;
+    text-align: left; 
+    margin-left: 40px;      /* redundante, mas ok */
 }
 
 .main-2 p {
-    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    text-align: left;
+    margin-top: 1.5rem;
+    color: #747f8d;
+    line-height: 1.5;
+    max-width: 500px;
+    margin-left: 220px;
 }
 
 
 
-.main-3 img {
-    max-width: 100%;
-    height: auto;
-}
+
+
+
 
 .main-3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 2rem;
-    padding: 2rem 5%;
+    display: flex;
+    padding: 2rem 5%; 
+    margin-left: 100px;
+    margin-top: -600px;
+
 }
 
-.text h1 {
-    font-size: clamp(1.8rem, 4vw, 3rem);
-    margin-bottom: 1rem;
+.main-3 img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 100px;
 }
 
-.text p {
-    font-size: clamp(1rem, 2vw, 1.3rem);
+.main-3 h1 {
+    font-size: clamp(2.5rem, 4vw, 2rem);
+    font-weight: 800;
+    margin-bottom: 1.0rem;
+    margin-top: 10px;
+    margin-left: -30px;
+    color: #23272a;
+    line-height: 1.2; 
 }
+
+.main-3 p {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    margin-top: 300px; 
+    margin-left: -270px;
+    color: #747f8d;
+    line-height: 1.0;
+    max-width: 500px;
+    
+}
+
+
 
 
 .main-4 {
@@ -170,30 +227,47 @@
     align-items: center;
     gap: 2rem;
     padding: 2rem 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.main-4 h1 {
+    font-size: clamp(2.5rem, 5vw, 2rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    margin-top: 200px;
+    color: #23272a;
+    line-height: 1.2;
+    text-align: left; 
+    margin-left: 40px; 
+}
+
+.main-4 p {
+    font-size: clamp(1.2rem, 2.0vw, 1.0rem);
+    font-weight: 400;
+    max-width: 900px;
+    color: #747f8d;
+    margin-left: -10px;
+    margin-top: 90px;
+    
+    
 }
 
 .main-4 img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 2rem 0;
+    position: relative;
+    left: 0px;
+    top: -80px;
 }
 
-.text h1 {
-    font-size: clamp(1.8rem, 4vw, 3rem);
-    margin-bottom: 1rem;
-}
 
-.text p {
-    font-size: clamp(1rem, 2vw, 1.3rem);
-}
-
-/* Alterna a ordem da imagem/texto no main-2 e main-4 */
-.main-2 {
-    grid-template-columns: 1fr 1fr;
-}
-
-.main-4 {
-    grid-template-columns: 1fr 1fr;
-}
 
 .footer {
     width: 100%;
