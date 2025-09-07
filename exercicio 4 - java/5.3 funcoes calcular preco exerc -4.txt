@@ -1,0 +1,5 @@
+Código condição de pagamento:
+1 - À vista débito, recebe 10% de desconto;
+2 - À vista no dinheiro ou pix. recebe  15% de desconto;
+3 - em dua vezes, preço normal de etiqueta sem juros;
+4 - acima de duas vezes, preço normal de etiqueta mais juros de 10%;
