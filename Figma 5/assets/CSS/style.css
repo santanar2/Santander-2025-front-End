@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap');
 
-:root {
+:root, :root[data-theme='dark' ] {
     --primary-color: #f0f0f0;
 
     --primary-bg-color: #111217;
@@ -12,6 +12,27 @@
     --link-color: #9a9a9c;
     --icon-color: #c7c8c9; 
 }
+
+:root[data-theme='light'] {
+    --primary-color:#0b0b0f;
+
+    --primary-bg-color:#e9e9e9;
+    --secondary-bg-color:#c7c8c9;
+    --border-color:#c7c8c9;
+
+    --title-color: #0b0b0f;
+    --text-color:#28292e;
+    --link-color:#28292e;
+    --icon-color:#56575a;
+    
+}
+
+html[data-theme='lught'] .toggleGitHub {
+    filter: invert(1);
+}
+
+
+
 
 
 * {
@@ -44,6 +65,7 @@ i {
     padding: 0.5rem 1rem;
     border-bottom: 2px solid var(--Border-color); /* só aqui */
     
+    
 }
 
 
@@ -58,10 +80,15 @@ i {
 
 #toggleGitHub {
     font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
 }
 
 #toggleTheme {
     font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: ease-in-out .4s;
 }
 
 #toggleHome {
@@ -118,11 +145,13 @@ i {
 }
 
 .menu__icon,  .menu__text {
-    color:var(--text-color);
+    color: #6c6c6c;
+    transition: color 0.3s ease;
 }
 
 .menu__icon {
     font-size: 1.5rem;
+    
 }
 
 
@@ -149,11 +178,11 @@ i {
 
 .top {
     display: flex;
-    align-items: center;      /* alinha textos verticalmente */
+    align-items: center;
     gap: 1rem;
-    border-bottom: 1px solid var(--Border-color); /* linha abaixo do top */
-    flex: 1;                 /* faz o .top ocupar o espaço disponível */
-    height: 100%;            /* pode ser removido se desalinhar */
+    /* border-bottom: 1px solid var(--Border-color); */ /* ← removida */
+    flex: 1;
+    height: 100%;
 }
 
 
@@ -169,15 +198,18 @@ i {
     }
     .nav--mobile {
         display: none;
+        
     }
 
     .header__nav {
         display: flex;
+        
     }
 
     .header__nav,
     .header__toggle {
     min-width: 30%; 
+    
     }
 }
 
