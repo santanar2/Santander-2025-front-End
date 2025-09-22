@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
 :root, :root[data-theme='dark' ] {
     --primary-color: #f0f0f0;
 
@@ -20,7 +22,7 @@
     --secondary-bg-color:#c7c8c9;
     --border-color:#c7c8c9;
 
-    --title-color: #0b0b0f;
+    --title-color: #f0f0f0;
     --text-color:#28292e;
     --link-color:#28292e;
     --icon-color:#56575a;
@@ -46,8 +48,24 @@ html[data-theme='lught'] .toggleGitHub {
 
 body {
     background: var(--primary-bg-color);
-    font-family:'Inter', Tahoma, Geneva, Verdana, sans-serif ;
+    color: var(--text-color);   /* ← cor aplicada ao texto padrão */
+    font-family:'Inter', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    
 }
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color);   /* títulos com cor de destaque */
+    font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    
+}
+
+p {
+    color: var(--text-color);      /* parágrafos com cor de texto */
+    font-size: 1.25rem;
+    text-align: justify; 
+}
+
 
 a {
     text-decoration: none; 
@@ -56,6 +74,18 @@ a {
 i {
     color: var(--icon-color);
 }
+
+b {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 200; 
+    
+}
+
+
 
 .header {
     display: flex;
@@ -159,6 +189,42 @@ i {
     gap: 1rem;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 1rem;
+}
+
+.menu--social {
+    gap: 1rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    width: 100%;
+    background: transparent;
+    border-radius: 3.125rem;
+    padding: 0.875rem 1rem;
+
+}
+
+.btn span, .btn i {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.btn--primary span {
+    color:  var(--primary-color);
+}
+
+.btn--primary {
+    border: 1px solid var(--primary-color); 
+}
+
 .header__nav {
     display: none;
     
@@ -185,6 +251,26 @@ i {
     height: 100%;
 }
 
+.main__content1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main__content2 iframe {
+    
+    aspect-ratio: 16/9; 
+}
+
+footer p {
+    font-size: .875rem;
+    text-align: center;
+}
+
+/* Esconde o topo no mobile */
+.top {
+    display: none;
+}
 
 
 /*mobile*/
@@ -194,6 +280,10 @@ i {
         border-bottom: 1px solid var(--Border-color); /* linha só no desktop */
         padding: 1rem 6rem; 
         background: var(--primary-bg-color);
+
+    .top {
+        display: flex;
+    }
         
     }
     .nav--mobile {
