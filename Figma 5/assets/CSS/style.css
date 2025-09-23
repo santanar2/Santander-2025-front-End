@@ -8,6 +8,7 @@
     --primary-bg-color: #111217;
     --secondary-bg-color: #28292e;
     --Border-color: #28292e;
+    --secondary-border-color: #56575a;
 
     --title-color: #9a9a9c;
     --text-color: #9a9a9c;
@@ -16,22 +17,34 @@
 }
 
 :root[data-theme='light'] {
-    --primary-color:#0b0b0f;
+    --primary-color: #0b0b0f;         /* Preto para elementos principais */
+    --primary-bg-color: #e9e9e9;      /* Fundo claro */
+    --secondary-bg-color: #c7c8c9;    /* Fundo secundário */
+    --border-color: #c7c8c9;
+    --secondary-border-color: #56575a;
 
-    --primary-bg-color:#e9e9e9;
-    --secondary-bg-color:#c7c8c9;
-    --border-color:#c7c8c9;
-
-    --title-color: #f0f0f0;
-    --text-color:#28292e;
-    --link-color:#28292e;
-    --icon-color:#56575a;
-    
+    --title-color: #0b0b0f;           /* 👈 Agora títulos ficam pretos no light */
+    --text-color: #28292e;            /* Texto normal em cinza escuro */
+    --link-color: #28292e;            /* Links também escuros */
+    --icon-color: #28292e;            /* Ícones em cinza */
 }
 
-html[data-theme='lught'] .toggleGitHub {
-    filter: invert(1);
+
+/* Ícone padrão no dark */
+#toggleGitHub {
+    color: #f0f0f0; /* branco no dark */
 }
+
+
+
+/* Ícone no light */
+html[data-theme='light'] #toggleGitHub {
+    color: #0b0b0f; /* preto no light */
+    filter: none;   /* remove inversão */
+}
+
+
+
 
 
 
@@ -57,7 +70,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: var(--title-color);   /* títulos com cor de destaque */
     font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
-    
+    text-transform: uppercase;
+    font-weight: 200;
 }
 
 p {
@@ -198,6 +212,7 @@ main {
 
 .menu--social {
     gap: 1rem;
+    
 }
 
 .btn {
@@ -208,8 +223,14 @@ main {
     width: 100%;
     background: transparent;
     border-radius: 3.125rem;
-    padding: 0.875rem 1rem;
+    padding: 0.875rem 1.5rem;
+    transition: ease-in-out .3s;
 
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: ease-in-out .3s;
 }
 
 .btn span, .btn i {
@@ -224,6 +245,8 @@ main {
 .btn--primary {
     border: 1px solid var(--primary-color); 
 }
+
+
 
 .header__nav {
     display: none;
@@ -258,13 +281,78 @@ main {
 }
 
 .main__content2 iframe {
-    
     aspect-ratio: 16/9; 
+}
+
+.habilidades {
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6.50rem 1rem 2rem 1rem;
+    background: var(--secondary-bg-color);
+    margin-top: -5.5rem;
+    gap:1.25rem ;
+
+}
+
+.habilidades h2 {
+    font-size: 2rem;
+    text-transform: none;
+    margin-top: -2rem;
+}
+
+.habilidades__list {
+    display:flex ;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.habilidades__item i {
+    font-size: 2.5rem; 
+    color: var(--icon-color);   /* 👈 usa a variável, funciona no dark e no light */
+    width: 4.8rem;
+    height: 4.8rem;
+    aspect-ratio: 1/1;
+    border: 1px solid var(--secondary-border-color);
+    border-radius: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+    transition: color 0.3s ease;
+}
+
+/* Efeito hover */
+.habilidade__logo:hover i {
+    color: var(--primary-color); /* ícone muda para cor de destaque no hover */
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+
+.habilidade__logo {
+    height: 2.4rem;
+    cursor: pointer;
+    
+}
+
+.habilidade__logo:hover {
+    transform: scale(1.05);
+    transition: ease-in-out .3s;
+}
+
+footer {
+    margin-bottom:  5rem;
 }
 
 footer p {
     font-size: .875rem;
     text-align: center;
+    padding: 1rem;
+
 }
 
 /* Esconde o topo no mobile */
@@ -301,14 +389,89 @@ footer p {
     min-width: 30%; 
     
     }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    main {
+        padding: 8rem 6rem 4rem 6rem;
+        margin-top: -6rem;
+    }
+
+    .main__content1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5rem;
+        
+    }
+    
+
+}
+/*button, ver projeto*/
+@media (min-width: 1200px) {
+    main {
+        padding: 2rem 2rem 2rem;
+    }
+
+
+    .main__content1  .btn {
+        width: auto;
+        padding: 1rem 3rem 1rem;
+        cursor: pointer;
+    }
+
+    .habilidades {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10rem 6rem 4rem;
+    }
+
+    .habilidades h2 {
+        font-size: 3.5rem;
+        width: 60%;
+    }
+
+    .habilidades__list {
+        gap: 1rem;
+    }
+
+    .habilidades__item i {
+    width: 6rem;
+    height: 6rem;
+    
+}
+
+.habilidade__logo {
+    height: 2.5rem;
+    cursor: pointer;
+    
+}
+
 }
 
 /*desktop*/
 @media (min-width: 1400px) {
+        h1 {
+            font-size: 6.25rem;
+}
+p {
+    font-size: 1.5rem;
+}
+
     .header {
-        
         padding: 1rem 15rem;
         
     }
+
+    main {
+        padding: 12rem 15rem 2rem;
+    }
+
+    .habilidades {
+        padding: 10rem 15rem 4rem;
+    }
+
 }
 
