@@ -99,7 +99,16 @@ h1 {
     
 }
 
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
+h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
 
 .header {
     display: flex;
@@ -223,8 +232,11 @@ main {
     width: 100%;
     background: transparent;
     border-radius: 3.125rem;
+    border: none;
     padding: 0.875rem 1.5rem;
     transition: ease-in-out .3s;
+    cursor: pointer;
+    color: var(--primary-color);
 
 }
 
@@ -246,7 +258,9 @@ main {
     border: 1px solid var(--primary-color); 
 }
 
-
+main, .projetos {
+    padding: 2.5rem 1rem;
+}
 
 .header__nav {
     display: none;
@@ -289,7 +303,7 @@ main {
     flex-direction:column;
     justify-content: flex-start;
     align-items: center;
-    padding: 6.50rem 1rem 2rem 1rem;
+    padding: 6.50rem 1rem 2rem;
     background: var(--secondary-bg-color);
     margin-top: -5.5rem;
     gap:1.25rem ;
@@ -305,7 +319,7 @@ main {
 .habilidades__list {
     display:flex ;
     flex-flow: row wrap;
-    justify-content: space-between;
+    
     gap: .5rem;
 }
 
@@ -339,9 +353,109 @@ main {
     
 }
 
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.projetos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.projetos__container img.card__cover {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    max-width: 500px;
+}
+
+.card__title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.card__description {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--title-color);
+}
+
+.card__list {
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.card__buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card__buttons .btn {
+    border: 1px solid var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 3rem;
+    background: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card__buttons .btn:hover {
+    transform: scale(1.05);
+    background: var(--secondary-bg-color);
+}
+
+/* Responsivo */
+@media (min-width: 992px) {
+    .projetos__container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+  /* Alterna layout imagem esquerda/direita */
+    .projetos__container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+    .card__title {
+    font-size: 2.5rem;
+}
+
+    .card__description, .card__list li {
+    font-size: 1.rem;
+    }
+}
+
+
 .habilidade__logo:hover {
     transform: scale(1.05);
     transition: ease-in-out .3s;
+}
+
+.card__body .habilidades__item {
+    width: 4rem;  /* largura*/
+    height: 4rem; /*altura*/
+}
+
+.card__body .habilidade__logo {
+    height: 2rem;  /*altura*/
 }
 
 footer {
@@ -394,7 +508,13 @@ footer p {
         font-size: 4rem;
     }
 
-    main {
+    h2 {
+        font-size: 3rem;
+        letter-spacing: 0.4rem;
+    }
+
+    
+    main, .projetos {
         padding: 8rem 6rem 4rem 6rem;
         margin-top: -6rem;
     }
@@ -406,11 +526,36 @@ footer p {
         margin-top: 5rem;
         
     }
+
+    .projetos__card {
+    flex-direction: row;
     
+    }
+    
+
+    .card__cover {
+        width: 50%;
+    }
+
+    .card__title {
+        font-size: 3.25rem;
+    }
+
+    .card__description, .card__item {
+        font-size: 1.25rem;
+    }
+
+    .card__buttons, .btn {
+        width: auto; 
+    }
 
 }
 /*button, ver projeto*/
 @media (min-width: 1200px) {
+h2 {
+    font-size: 4rem;
+}
+
     main {
         padding: 2rem 2rem 2rem;
     }
@@ -456,6 +601,11 @@ footer p {
         h1 {
             font-size: 6.25rem;
 }
+
+h2 {
+    font-size: 5rem;
+}
+
 p {
     font-size: 1.5rem;
 }
