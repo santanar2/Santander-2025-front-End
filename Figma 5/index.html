@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricardo Santana | Portfolio</title>
@@ -13,12 +14,14 @@
 <body>
     <header class="header">
         
-        <div class="top">
-            <span class="menu__text">Home</span>
-            <span class="menu__text">Projetos</span>
-            <span class="menu__text">Sobre</span>
-            <span class="menu__text">Contato</span>
-        </div>
+
+    <div  class="top">
+        <a href="#home" class="menu__text">Home</a>
+        <a href="#projetos" class="menu__text">Projetos</a>
+        <a href="#sobre" class="menu__text">Sobre</a>
+        <a href="#contato" class="menu__text">Contato</a>
+    </div>
+
 
         <div class="header_brand">
         <i id="toggleGitHub" class="bi bi-github"></i>  
@@ -68,28 +71,28 @@
     <nav class="nav--mobile">
         <ul class="menu menu--mobile">
             <li class="menu__item">
-                <a class="menu__link active" href="#Home">
+                <a class="menu__link active" href="#home">
                 <i id="toggleHome" class="menu__icon bi bi-house-door"></i>
                 <span class="menu__text">Home</span>
             </a>
             </li>
 
             <li class="menu__item">
-                <a class="menu__link" href="#Projetos">
+                <a class="menu__link" href="#projetos">
                 <i id="toggleProjetos" class="bi bi-window-stack"></i>
                 <span class="menu__text">Projetos</span>
             </a>
             </li>
 
             <li class="menu__item">
-                <a class="menu__link" href="#Sobre">
+                <a class="menu__link" href="#sobre">
                 <i id="toggleSobre" class="bi bi-person"></i>
                 <span class="menu__text">Sobre</span>
             </a>
             </li>
 
             <li class="menu__item">
-                <a class="menu__link" href="#Contato">
+                <a class="menu__link" href="#contato">
                 <i id="toggleContato" class="bi bi-envelope"></i>
                 <span class="menu__text">Contato</span>
             </a>
@@ -98,7 +101,7 @@
         </ul>
     </nav>
 <br><br>
-    <main>
+    <main id="home">
         <div class="main__content1"> 
         <h1><b> Soluções Criativas &</b><br> Desenvolvimento Front-end</h1> 
         <p>Ricardo Santana São Paulo-SP Desenvolvedor Junior Full Stack (Studant) <br> desenvolvendo a seção Sobre </p>
@@ -160,82 +163,166 @@
 
     
 
-   <section id="projetos" class="projetos">
-  <h2>Projetos</h2>
+<section id="projetos" class="projetos">
+<h2>Projetos</h2>
 
-  <!-- Projeto 1 -->
-  <div class="projetos__container">
+<!-- Projeto 1 -->
+    <div class="projetos__container">
     <img class="card__cover" src="projetos/notebook 1.jpg" alt="Projeto 1">
     <div class="card__body">
-      <h3 class="card__title">Santana Box Ecommerce</h3>
-      <p class="card__description">Ecommerce de Livros</p>
-      <ul class="card__list">
-        <li>Listagem de favoritos;</li>
-        <li>Carrinho de compras;</li>
-        <li>Filtragem por preço e categoria.</li>
-      </ul>
-      <ul class="habilidades__list">
-        <li class="habilidades__item habilidade__logo"><i class="bi bi-filetype-html"></i></li>
-        <li class="habilidades__item habilidade__logo"><i class="bi bi-css"></i></li>
-        <li class="habilidades__item habilidade__logo"><i class="bi bi-javascript"></i></li>
-        <li class="habilidades__item habilidade__logo"><i class="bi bi-github"></i></li>
-      </ul>
-      <div class="card__buttons">
-        <button class="btn"><span>Prévia</span></button>
-        <button class="btn"><span>Repositório</span></button>
-      </div>
+        <h3 class="card__title">Santana Box Ecommerce</h3>
+        <p class="card__description">Ecommerce de Livros</p>
+            <ul class="card__list">
+                <li>Listagem de favoritos;</li>
+                <li>Carrinho de compras;</li>
+                <li>Filtragem por preço e categoria.</li>
+            </ul>
+            <ul class="habilidades__list">
+                <li class="habilidades__item habilidade__logo"><i class="bi bi-filetype-html"></i></li>
+                <li class="habilidades__item habilidade__logo"><i class="bi bi-css"></i></li>
+                <li class="habilidades__item habilidade__logo"><i class="bi bi-javascript"></i></li>
+                <li class="habilidades__item habilidade__logo"><i class="bi bi-github"></i></li>
+            </ul>
+            <div class="card__buttons">
+                <button class="btn"><span>Prévia</span></button>
+                <button class="btn"><span>Repositório</span></button>
+            </div>
     </div>
-  </div>
+    </div>
 
-  <!-- Projeto 2 -->
-  <div class="projetos__container">
+        <!-- Projeto 2 -->
+    <div class="projetos__container">
     <img class="card__cover" src="projetos/notbook 2.webp" alt="Projeto 2">
-    <div class="card__body">
-      <h3 class="card__title">Archstil Blog</h3>
-      <p class="card__description">História por trás dos estilos arquitetônicos</p>
-      <ul class="card__list">
-        <li>Postagens relacionadas;</li>
-        <li>Filtragem por tags e categorias;</li>
-        <li>Biografia do autor.</li>
-      </ul>
-      <ul class="habilidades__list">
-        <li class="habilidades__item habilidade__logo"><i class="bi bi-filetype-html"></i></li>
-        <li class="habilidades__item habilidade__logo"><i class="bi bi-css"></i></li>
-        <li class="habilidades__item habilidade__logo"><i class="bi bi-javascript"></i></li>
-        <li class="habilidades__item habilidade__logo"><i class="bi bi-github"></i></li>
-      </ul>
-      <div class="card__buttons">
-        <button class="btn"><span>Prévia</span></button>
-        <button class="btn"><span>Repositório</span></button>
-      </div>
+        <div class="card__body">
+            <h3 class="card__title">Archstil Blog</h3>
+            <p class="card__description">História por trás dos estilos arquitetônicos</p>
+        <ul class="card__list">
+            <li>Postagens relacionadas;</li>
+            <li>Filtragem por tags e categorias;</li>
+            <li>Biografia do autor.</li>
+        </ul>
+        <ul class="habilidades__list">
+            <li class="habilidades__item habilidade__logo"><i class="bi bi-filetype-html"></i></li>
+            <li class="habilidades__item habilidade__logo"><i class="bi bi-css"></i></li>
+            <li class="habilidades__item habilidade__logo"><i class="bi bi-javascript"></i></li>
+            <li class="habilidades__item habilidade__logo"><i class="bi bi-github"></i></li>
+        </ul>
+        <div class="card__buttons">
+            <button class="btn"><span>Prévia</span></button>
+            <button class="btn"><span>Repositório</span></button>
+        </div>
     </div>
-  </div>
+    </div>
 
-  <!-- Projeto 3 -->
-  <div class="projetos__container">
-    <img class="card__cover" src="projetos/notbook3.jpeg" alt="Projeto 3">
+    <!-- Projeto 3 -->
+    <div class="projetos__container">
+        <img class="card__cover" src="projetos/notbook3.jpeg" alt="Projeto 3">
     <div class="card__body">
-      <h3 class="card__title">Portfólio Pessoal</h3>
-      <p class="card__description">Página de apresentação com projetos</p>
-      <ul class="card__list">
-        <li>Layout responsivo;</li>
-        <li>Tema claro/escuro;</li>
-        <li>Seções de habilidades e contato.</li>
-      </ul>
-      <ul class="habilidades__list">
-        <li class="habilidades__item habilidade__logo"><i class="bi bi-filetype-html"></i></li>
-        <li class="habilidades__item habilidade__logo"><i class="bi bi-css"></i></li>
-        <li class="habilidades__item habilidade__logo"><i class="bi bi-javascript"></i></li>
-        <li class="habilidades__item habilidade__logo"><i class="bi bi-github"></i></li>
-      </ul>
-      <div class="card__buttons">
-        <button class="btn"><span>Prévia</span></button>
-        <button class="btn"><span>Repositório</span></button>
-      </div>
+        <h3 class="card__title">Portfólio Pessoal</h3>
+        <p class="card__description">Página de apresentação com projetos</p>
+        <ul class="card__list">
+            <li>Layout responsivo;</li>
+            <li>Tema claro/escuro;</li>
+            <li>Seções de habilidades e contato.</li>
+        </ul>
+        <ul class="habilidades__list">
+            <li class="habilidades__item habilidade__logo"><i class="bi bi-filetype-html"></i></li>
+            <li class="habilidades__item habilidade__logo"><i class="bi bi-css"></i></li>
+            <li class="habilidades__item habilidade__logo"><i class="bi bi-javascript"></i></li>
+            <li class="habilidades__item habilidade__logo"><i class="bi bi-github"></i></li>
+        </ul>
+        <div class="card__buttons">
+            <button class="btn"><span>Prévia</span></button>
+            <button class="btn"><span>Repositório</span></button>
+        </div>
     </div>
-  </div>
+    </div>
+<section id="sobre" class="form-exp-curso">
+    <a class="menu__text" href="#sobre"></a>
+
+    <div class="col1">
+        
+
+    <!-- Formação -->
+    <h2>FORMAÇÕES</h2>
+    <h3>Técnico em Rede de Computadores, Especialização em Radiocomunicação, Telecomunicação e Eletrotécnica </h3>
+    
+    <p><i class="bi bi-bank"></i> Falculdade Unicesumar</p>
+    <p><i class="bi bi-mortarboard"></i> Analise Desenvolvimento de Sistemas</p>
+    <p>Formação - Dez 2026.</p>
+    <!-- Experiências -->
+    <h2>EXPERIÊNCIAS</h2>
+    <h3>Técnico em  Manutenção de Equipamentos Fixos CCO</h3>
+    <p>Motiva out de 2021 - Atualmente</p>
+    <p>
+        Atividades:
+Servidores Alstom e Siemens, sistema de transmissão óptico CISCO, SAGEM, sistema de gravação em telefonia, Rádio Tetra Motorola e Sinalização. 
+
+    </p>
+
+    <ul>
+        <li>- Operação em Windows, Linux e Unix;</li>
+        <li>- Manutenção preventiva;</li>
+        <li>- Manutenção corretiva;</li>
+        <li>- Gestão de ordens SAP PM.</li>
+    </ul>
+    </div>
+
+    <div class="col2">
+    <!-- Cursos -->
+    <h2>CURSOS</h2>
+    <div id="accordion">
+        <div class="accordion__item active">
+        <button class="accordion__header start">
+            <span>Formaçao HTML 5 Wer Developer</span>
+            <i class="bi bi-caret-down-fill"></i>
+        </button>
+        <div class="accordion__body">
+            <p>Digital Innovation One. Set 2025. 21h.</p>
+        </div>
+        </div>
+
+        <div class="accordion__item">
+        <button class="accordion__header">
+            <span>Formação GitHub Certification</span>
+            <i class="bi bi-caret-down-fill"></i>
+        </button>
+        <div class="accordion__body">
+            <p>Digital Innovation One. Mai 2025. 10h.</p>
+        </div>
+    </div>
+
+        <div class="accordion__item">
+        <button class="accordion__header end">
+            <span>Microsoft 50 anos - GitHub Copilot</span>
+            <i class="bi bi-caret-down-fill"></i>
+        </button>
+        <div class="accordion__body end">
+            <p>Digital Innovation One. Mai 2025. 17h.</p>
+        </div>
+        </div>
+    </div>
+    </div>
 </section>
 
+<section id="contato" class="contact">
+    <h2>Contate-me</h2>
+    <p>Estou disponível para serviços e novas conexões. Contate-me via e-mail e conect-se comigo através das minhas redes sociais</p>
+    <ul class="menu menu--social">
+        <li>
+            <a class="menu__link" href="https://github.com/santanar2/santanar2" target="_blank">
+            <i class="menu__icon bi bi-github"></i>
+            <span>GitHub</span>
+            </a>
+        </li>
+        <li>
+            <a class="menu__link" href="https://www.linkedin.com/in/ricardo-hon%C3%B3rio-de-santana-630a9493/" target="_blank">
+                <i class="menu__icon bi bi-linkedin"></i>
+                <span>linkedin</span>
+            </a>
+        </li>
+    </ul>
+</section>
 
 <footer>
     <p>&copy; 2025. Todos os Diretios Reservados. Ricardo Santana. Desenvolvido por RS.

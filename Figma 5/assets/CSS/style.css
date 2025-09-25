@@ -9,6 +9,7 @@
     --secondary-bg-color: #28292e;
     --Border-color: #28292e;
     --secondary-border-color: #56575a;
+    --primary-border-color:#28292e;
 
     --title-color: #9a9a9c;
     --text-color: #9a9a9c;
@@ -42,11 +43,6 @@ html[data-theme='light'] #toggleGitHub {
     color: #0b0b0f; /* preto no light */
     filter: none;   /* remove inversão */
 }
-
-
-
-
-
 
 
 
@@ -224,6 +220,14 @@ main {
     
 }
 
+span.menu__text,
+a.menu__text {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+
 .btn {
     display: flex;
     justify-content: center;
@@ -326,8 +330,8 @@ main, .projetos {
 .habilidades__item i {
     font-size: 2.5rem; 
     color: var(--icon-color);   /* 👈 usa a variável, funciona no dark e no light */
-    width: 4.8rem;
-    height: 4.8rem;
+    width: 2.8rem;
+    height: 2.8rem;
     aspect-ratio: 1/1;
     border: 1px solid var(--secondary-border-color);
     border-radius: 50rem;
@@ -393,7 +397,7 @@ main, .projetos {
 }
 
 .card__list {
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -419,6 +423,50 @@ main, .projetos {
     transform: scale(1.05);
     background: var(--secondary-bg-color);
 }
+
+/* Layout Formação, Experiência e Cursos */
+.form-exp-curso {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 4rem 1rem;
+}
+
+.form-exp-curso .col1,
+.form-exp-curso .col2 {
+    flex: 1;
+}
+
+/* Títulos */
+.form-exp-curso h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--title-color);
+}
+
+.form-exp-curso h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+    color: var(--primary-color);
+}
+
+/* Texto */
+.form-exp-curso p,
+.form-exp-curso li {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Responsivo: lado a lado no desktop */
+@media (min-width: 992px) {
+    .form-exp-curso {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+}
+}
+
 
 /* Responsivo */
 @media (min-width: 992px) {
@@ -457,6 +505,61 @@ main, .projetos {
 .card__body .habilidade__logo {
     height: 2rem;  /*altura*/
 }
+
+.accordion {
+    border-radius: .5rem;
+    border: 1px solid var(--primary-border-color);
+}
+
+.accordion__header {
+    width: 100%;
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border: 1px solid var(--primary-border-color);
+    border-radius: .5rem .5rem 0 0;
+}
+
+.accordion__header span {
+    color: var(--title-color);
+    font-size: 1.15rem;
+}
+
+.accordion__body .start {
+    border-radius: 0.25rem 0.25rem 0rem 0rem;
+}
+
+.accordion__header .end, .accordion__item.active, .accordion__body.end {
+    border-radius: 0rem 0rem 0.25rem 0.25rem;
+}
+
+.accordion__item.active .accordion__header.end {
+    border-radius: 0rem;
+}
+
+.accordion__body {
+    display: none;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border: 1px solid var(--primary-border-color);
+}
+
+.accordion__item.active .accordion__header {
+    background: var(--secondary-bg-color);
+}
+
+.accordion__item.active .accordion__body {
+    display: flex;
+}
+
+.accordion__item.active .bi-caret-down-fill {
+    transform: rotate(180deg);
+}
+
 
 footer {
     margin-bottom:  5rem;
