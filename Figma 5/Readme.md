@@ -1,5 +1,3 @@
-
-
 ```markdown
 # 🌐 Portfólio Pessoal - Ricardo Santana
 
