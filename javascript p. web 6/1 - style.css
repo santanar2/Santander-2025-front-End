@@ -1,0 +1,18 @@
+body {
+    background-color: aquamarine;
+}
+
+h1 {
+    color: red;
+}
+
+p {
+    color: blueviolet;
+}
+
+button {
+    border: 1px solid black; /* antes estava errado */
+    border-radius: 5px;      /* agora arredonda */
+    padding: 5px 10px;
+    cursor: pointer;
+}

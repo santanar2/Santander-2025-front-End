@@ -1,10 +1,3 @@
-Boa, Ricardo 👌  
-Um **README.md rico em detalhes** ajuda bastante quem visita o repositório — passa profissionalismo e clareza.  
-Vou montar um modelo **completo e detalhado**, que já segue boas práticas do GitHub.  
-
----
-
-```markdown
 # 🌐 Portfólio Pessoal - Ricardo Santana
 
 Bem-vindo ao meu portfólio! 🚀  
