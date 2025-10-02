@@ -1,18 +1,28 @@
-body {
-    background-color: aquamarine;
+*{
+    font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-    color: red;
+.content {
+    padding: 1rem;
 }
 
-p {
-    color: blueviolet;
+.content h1 {
+    margin: 0;
 }
 
-button {
-    border: 1px solid black; /* antes estava errado */
-    border-radius: 5px;      /* agora arredonda */
-    padding: 5px 10px;
-    cursor: pointer;
+ol.pokemons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 1;
+}
+
+ol.pokemons li {
+    margin: .5rem;
+    padding: 2rem 1rem;
+    background-color: #14a06f;
+    color: white;
+    border-radius: 1rem;
+    height: 100px;
 }
