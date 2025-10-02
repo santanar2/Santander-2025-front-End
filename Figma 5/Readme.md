@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-=======
 
 
 ```markdown
->>>>>>> f1e591e ( Readme.md)
 # 🌐 Portfólio Pessoal - Ricardo Santana
 
 Bem-vindo ao meu portfólio! 🚀  
