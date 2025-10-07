@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Normalise CSS-->
-    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize-opentype.css/0.2.3/normalize-opentype.css" integrity="sha512-FzZ3/JDud8bWNK4cEbzFg63/pyzJ2eKyP+GIkLsHZvhu7NRHdZRn9BqhXH1xE3AS4gns491NY4uopx9Tci7i8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
-    <!--Font Roboto-->
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize-opentype.css/0.2.3/normalize-opentype.css" integrity="sha512-FzZ3/JDud8bWNK4cEbzFg63/pyzJ2eKyP+GIkLsHZvhu7NRHdZRn9BqhXH1xE3AS4gns491NY4uopx9Tci7i8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fonte Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<!--Nosso CSS-->
-    <link rel="stylesheet" href="/assets/CSS/global.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="/1 - style.css">
+
     <title>Pokedex</title>
 </head>
 <body>
@@ -19,28 +23,126 @@
         <h1>Pokedex</h1>
 
         <ol class="pokemons">
-            <li>
-                Bulbasaur
-            </li>
-
-            <li>
-                Ivysaur
-            </li>
-
-            <li>
-                Venusaur
-            </li>
-            <li>Charmander</li>
-
-            <li>
-                Charmeleon
-            </li>
-
-            <li>Charizard</li>
-
+            <li class="pokemon">
             
-        </ol>
-    </section>
+                <span class="number">#001</span>
+                <span class="name">Bulbasaur</span>
+
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type">grass</li>
+                        <li class="type">poison</li>
+
+                    </ol>
+                    <img src="https://img.pokemondb.net/sprites/home/normal/bulbasaur.png" alt="">
+                </div>
+            </li>
+<!--
+            <li>
+                <span class="number">#002</span>
+                <span class="name">Ivysaur</span>
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type">grass</li>
+                        <li class="type">poison</li>   
+                    </ol>                
+                <img src="https://img.pokemondb.net/sprites/home/normal/ivysaur.png" alt="">
+            </li> 
+
+            <li>
+                <span class="number">#003</span>
+                <span class="name">Venusaur</span>
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type">grass</li>
+                        <li class="type">poison</li>
+
+                    </ol>                
+                <img src="https://img.pokemondb.net/sprites/home/normal/venusaur.png" alt="">
+            </li>
+
+            <li>
+                <span class="number">#004</span>
+                <span class="name">Charmander</span>
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type">grass</li>
+                        <li class="type">poison</li> 
+
+                    </ol>                
+                <img src="https://img.pokemondb.net/sprites/home/normal/charmander.png" alt="">
+            </li>
+
+            <li>
+                <span class="number">#005</span>
+                <span class="name">Charmeleon</span>
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type">grass</li>
+                        <li class="type">poison</li>
+
+                    </ol>                
+                <img src="https://img.pokemondb.net/sprites/home/normal/charmeleon.png" alt="">
+            </li>
+
+            <li>
+                <span class="number">#006</span>
+                <span class="name">Charizard</span>
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type">grass</li>
+                        <li class="type">poison</li>
+
+                    </ol>                 
+                <img src="https://img.pokemondb.net/sprites/home/normal/charizard.png" alt="">
+            </li>   
+            <li>
+                <span class="number">#007</span>
+                <span class="name">Squirtle</span>
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type">grass</li>
+                        <li class="type">poison</li>
+
+                    </ol>                
+                <img src="https://img.pokemondb.net/sprites/home/normal/squirtle.png" alt="">
+            </li>   
+            <li>
+                <span class="number">#008</span>
+                <span class="name">Wartortle</span>
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type">grass</li>
+                        <li class="type">poison</li>
+
+                    </ol>                
+                <img src="https://img.pokemondb.net/sprites/home/normal/wartortle.png" alt="">
+            </li>
+            <li>
+                <span class="number">#009</span>
+                <span class="name">Blastoise</span>
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type">grass</li>
+                        <li class="type">poison</li>
+
+                    </ol>                
+                <img src="https://img.pokemondb.net/sprites/home/normal/blastoise.png" alt="">
+            </li>
+            <li>
+                <span class="number">#010</span>
+                <span class="name">Pikachu</span>
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type">grass</li>
+                        <li class="type">poison</li>
+
+                    </ol>                
+                <img src="https://img.pokemondb.net/sprites/home/normal/pikachu.png" alt="">
+                -->
+        
+        </ol>    
+    </section> 
 
 <!--Nosso JS-->
     <script src="/assets/js/main.js"></script>
