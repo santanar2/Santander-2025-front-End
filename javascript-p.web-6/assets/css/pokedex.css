@@ -1,82 +1,128 @@
+/*================================
+  AJUSTES DE ESTILO DO CARD (Lista)
+==================================*/
 .pokemon {
-    display: flex;
-    flex-direction: column;
+    /* Dimensões do card: mais quadrado e compacto, como no design */
+    width: 100%;
+    height: 120px; 
     padding: 1rem;
     border-radius: 1rem;
     color: #fff;
-    width: 100%;
-    max-width: 180px;
-    height: 200px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Importante para a imagem flutuante */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
 }
 
-.pokemon .number {
-    color: #000;
-    opacity: 0.3;
-    text-align: right;  
-    font-size: 0.625rem;
-    margin-bottom: 0.25rem;
-} 
+/* Estrutura do cabeçalho (Nome e Número) */
+.pokemon .card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
+}
 
 .pokemon .name {
     font-size: 1rem;
-    margin-bottom: 0.25rem;
+    font-weight: 700;
+    margin: 0;
     text-transform: capitalize;
     color: #fff;
-}
-
-.pokemon .detail {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    flex: 1;
-    margin-top: auto;
-}
-
-.pokemon .detail .types {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
     z-index: 2;
 }
 
-.pokemon .detail .types .type {
+.pokemon .number {
+    /* O número é pequeno e sutil, próximo ao nome */
     color: #fff;
-    padding: 0.25rem 0.5rem; 
-    font-size: 0.625rem;
-    border-radius: 0.625rem;
-    text-align: center;
-    filter: brightness(1.1);
-    white-space: nowrap;
+    opacity: 0.7;
+    text-align: left;
+    font-size: 0.7rem;
+    margin: 0;
+    font-weight: 400;
+    z-index: 2;
+} 
+
+/* Estrutura dos detalhes (Tipos e Imagem) */
+.pokemon .card-detail {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; /* Alinha a base da imagem/tipos */
+    justify-content: space-between;
+    flex: 1;
+    margin-top: 0;
 }
 
-.pokemon .detail img {   
-    max-width: 95px;
-    max-height: 95px;
+.pokemon .card-detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Tipos um abaixo do outro */
+    gap: 0.2rem;
+    z-index: 2;
+}
+
+.pokemon .card-detail .types .type {
+    /* Estilo do botão de tipo: pequeno e com borda sutil */
+    color: #fff;
+    padding: 0.1rem 0.4rem; 
+    font-size: 0.6rem;
+    border-radius: 0.4rem;
+    text-align: center;
+    filter: brightness(1.05);
+    white-space: nowrap;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Imagem flutuante */
+.pokemon .card-detail img {   
+    max-width: 75px;
+    max-height: 75px;
     width: auto;
     height: auto;
     object-fit: contain; 
+    /* Posicionamento absoluto no canto inferior/direita */
     position: absolute;
-    right: 1.25rem;
-    bottom: 1.25rem;
+    right: 5px; 
+    bottom: 5px;
     z-index: 1;
+    /* Adiciona a rotação sutil como no design */
+    transform: rotate(-10deg);
+    opacity: 0.9;
+}
+
+/* A classe antiga '.detail' não é mais necessária com a nova estrutura, 
+   mas você pode querer manter esta regra para limpar: */
+.pokemon .detail {
+    display: none;
 }
 
 
-
-
+/*================================
+  AJUSTES DE GRID (pokemons)
+==================================*/
 .pokemons {
     display: grid;
-    grid-template-columns: 1fr;
+    /* Ajusta para 2 colunas, como na imagem */
+    grid-template-columns: repeat(2, 1fr); 
     margin: 0;
     padding: 0;
     list-style: none;
-    gap: 1rem;
+    gap: 0.8rem; /* Espaçamento entre os cards */
 }
+
+/* Mantenha seus Media Queries se desejar mais colunas em telas maiores. */
+/* Exemplo de ajuste para telas maiores: */
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* ... e os demais ... */
+
 
 /* Cores dos tipos de Pokémon */
 .normal {
