@@ -1,0 +1,325 @@
+/* Container da Modal (Fundo escuro e efeito blur) */
+.modalContainer {
+  display: none;
+  position: fixed; /* 👈 ESSA LINHA FIXA O POP-UP NO CENTRO */
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+/* ... o restante dos estilos ... */
+
+
+/* Modal em si (o card branco/verde) */
+.modal {
+  width: 90%;
+  max-width: 600px; /* Ajuste para largura máxima como na imagem */
+  margin: 5% auto; /* Centraliza verticalmente e horizontalmente */
+  position: relative;
+  border-radius: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra mais suave */
+}
+
+/* Animação de entrada da modal */
+@keyframes fadeInScale {
+    0% { opacity: 0; transform: translateY(-20px) scale(0.98); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.modalContainer.active .modal {
+    animation: fadeInScale 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Botão de Fechar */
+.closeModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(214, 67, 67);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem; /* Tamanho da fonte do 'X' */
+  z-index: 1001;
+  transition: .4s ease;
+  display: flex; /* Para centralizar o 'X' */
+  align-items: center;
+  justify-content: center;
+}
+.closeModal:hover {
+  transform: scale(1.05);
+  background-color: red;
+}
+
+/* Estado ativo da modal */
+.modalContainer.active {
+  display: block;
+}
+
+/* Parte superior do detalhe (Bulbasaur, #1, tipos, imagem) */
+.pokemonDetail .pokeSpecie {
+  border-radius: 1.5rem; /* Bordas arredondadas para toda a seção */
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+.pokemonDetail .pokemon {
+  background-image: url('../img/poke_bg.svg'); /* Verifique este caminho */
+  background-size: 140px;
+  background-repeat: no-repeat;
+  background-position: right 10px top 10px; /* Ajusta a posição do BG */
+  cursor: auto;
+  border-radius: 1.5rem 1.5rem 0 0; /* Apenas topo arredondado */
+  padding: 1.5rem; /* Aumenta o padding interno */
+  color: #fff; /* Cor do texto no topo */
+}
+
+.pokemonDetail .identification {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinha no topo */
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.pokemonDetail .pokemon .name {
+  font-size: 2.2rem; /* Aumenta a fonte do nome */
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 1; /* Para evitar espaçamento extra */
+}
+.pokemonDetail .pokemon .number {
+  font-size: 1.2rem; /* Aumenta a fonte do número */
+  opacity: 1; /* Garante visibilidade total */
+  color: #fff;
+  font-weight: bold;
+}
+
+.pokemonDetail .detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pokemonDetail .types {
+  display: flex;
+  align-self: flex-start; /* Alinha os tipos à esquerda */
+  margin-top: 0.8rem; /* Espaçamento maior acima dos tipos */
+  padding: 0;
+  list-style: none;
+}
+.pokemonDetail .pokemon .types .type {
+  color: #fff;
+  padding: .3rem .8rem; /* Padding ajustado */
+  margin: 0 .4rem 0 0; /* Espaçamento entre os tipos */
+  font-size: .85rem; /* Fonte um pouco maior */
+  border-radius: 1rem;
+  filter: brightness(1.1);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* Imagem do Pokémon e sua sombra */
+.pokeContainer {
+  position: relative;
+  width: 180px; /* Aumenta o tamanho do container da imagem */
+  height: 180px; /* Adiciona altura para consistência */
+  margin: 0.5rem auto 0 auto; /* Ajusta a margem */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pokemonDetail .detail img {
+  height: 150px; /* Aumenta o tamanho da imagem do Pokémon */
+  transform: scale(-1, 1); /* Se o original estiver virado, mantenha */
+  display: block;
+  max-width: 100%;
+  z-index: 10; /* Garante que a imagem esteja acima da sombra */
+  position: relative; /* Para z-index funcionar */
+}
+.pokeContainer::after {
+  content: "";
+  position: absolute;
+  bottom: 10px; /* Ajusta a posição da sombra */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  filter: blur(4px);
+  z-index: 1; /* A sombra deve estar abaixo da imagem */
+}
+@keyframes dancePoke { /* Animação permanece igual */
+  0%{ transform: rotate(0deg) scale(-1, 1); }
+  25%{ transform: rotate(10deg) scale(-1, 1); }
+  75%{ transform: rotate(-10deg) scale(-1, 1); }
+  100%{ transform: rotate(0deg) scale(-1, 1); }
+}
+.pokemonDetail .detail img:hover{
+  animation: dancePoke 1s infinite alternate;
+}
+
+/* Menu de Abas (About, Base Stats) */
+.menu {
+  width: 100%;
+  background-color: #f3efef; /* Cor de fundo das abas */
+  border-radius: 0; /* Remove arredondamento superior */
+  border-bottom: 1px solid #e0e0e0; /* Linha sutil abaixo das abas */
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around; /* Distribui as abas uniformemente */
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+    flex-grow: 1; /* Faz as abas ocuparem o espaço disponível */
+    text-align: center;
+}
+.menu li a {
+  text-decoration: none;
+  color: #5b5858;
+  font-size: 1.1rem;
+  padding: 1rem 0; /* Padding vertical ajustado */
+  display: block;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-weight: 500; /* Peso da fonte das abas */
+}
+.menu li a.active {
+  color: #000000;
+  font-weight: bold;
+  border-bottom: 2px solid #333; /* Linha inferior da aba ativa */
+}
+
+
+/* Tabelas de Detalhes (About, Base Stats) */
+#aboutTable, #baseStatsTable {
+  background-color: #f3efef; /* Cor de fundo da seção de detalhes */
+  border-radius: 0 0 1.5rem 1.5rem; /* Arredondado apenas na parte inferior */
+  padding: 1.5rem 1.5rem; /* Padding interno consistente */
+  box-sizing: border-box; /* Garante que padding não estoure a largura */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 500px; /* Limita a largura da tabela */
+  margin: 0 auto;
+}
+
+thead th {
+    font-size: 1.2rem;
+    text-align: left; /* Alinha o cabeçalho "About" e "Breeding" à esquerda */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    font-weight: 500; /* Peso da fonte dos títulos das seções */
+    color: #5b5858;
+    padding-left: 0; /* Remove padding extra do cabeçalho */
+    margin-bottom: 15px; /* Espaçamento abaixo do cabeçalho */
+}
+
+/* Títulos de seção como "Breeding" */
+th.section-title {
+    padding-top: 20px; /* Espaçamento acima do Breeding */
+    border-top: 1px solid #e0e0e0; /* Linha acima do Breeding */
+    margin-top: 20px;
+}
+
+td {
+    padding: 8px 0; /* Espaçamento vertical para as células */
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 0.95rem; /* Tamanho da fonte das células */
+    color: #333;
+}
+
+/* Primeira coluna (rótulos como Habitat, Height) */
+tr td:first-child {
+  color: #5b5858;
+  font-weight: normal; /* Normaliza o peso da fonte */
+  width: 35%; /* Largura para os rótulos */
+  padding-left: 0; /* Remove padding esquerdo */
+}
+/* Segunda coluna (valores) */
+tr td:last-child {
+    color: #000;
+    font-weight: bold; /* Valores em negrito */
+}
+
+
+/* Estilos específicos de Gênero */
+.gender-male {
+    color: #6495ED; /* Azul */
+    margin-right: 10px; /* Espaçamento entre os gêneros */
+    font-weight: bold;
+    display: inline-flex; /* Para alinhar o ícone e o texto */
+    align-items: center;
+}
+.gender-male::before { /* Ícone de masculino */
+    content: '♂';
+    font-size: 1.1em;
+    margin-right: 3px;
+}
+
+.gender-female {
+    color: #FF69B4; /* Rosa */
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+.gender-female::before { /* Ícone de feminino */
+    content: '♀';
+    font-size: 1.1em;
+    margin-right: 3px;
+}
+
+
+/* Progress Bar */
+progress {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 8px;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+}
+progress::-webkit-progress-bar {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+progress::-webkit-progress-value {
+  background-color: #39d331;
+  border-radius: 5px;
+}
+
+/* Esconder tabela de stats por padrão */
+#baseStatsTable {
+  display: none;
+}
+.visible {
+  display: block !important;
+}
+
+/* Media Queries para Responsividade */
+@media screen and (min-width: 380px) {
+  progress {
+    width: 130px;
+  }
+  td {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .modal {
+    margin: 10% auto;
+  }
+}
